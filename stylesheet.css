@@ -1,0 +1,42 @@
+/* general */
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* h3 {
+    font-family: acumin-pro, sans-serif;
+} */ /* maybe will use it*/ 
+
+.logo {
+    width: 165px;
+    height: 63px;
+}
+
+#todays-film { /* remember to fix scaling -> responsive image! */
+ max-width: 1100px;
+ max-height: 728px;
+}
+
+.cta {}
+
+.cta__sign-in-or-register {
+    width: 128px;
+    height: 128px;
+    border-radius: 50%;
+    border: 1px;
+
+}
+
+.cta__go-back {}
+.cta__confirm {}
+.cta__check-now {}
+.cta__continue {}
+.cta__call-now {}
+.cta__chat-now {}
+.cta__read-now {}
+.cta__go-to-my-films {}
+
+.cta__trash {}
+.cta__info {}
+.cta__basket {}
+.cta__fav {}
