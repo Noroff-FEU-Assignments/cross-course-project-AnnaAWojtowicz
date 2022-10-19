@@ -14,49 +14,184 @@
     <!--Montserrat fra GoogleFonts-->
     <link rel="stylesheet" href="https://use.typekit.net/vco2zuo.css" />
     <!--Acumin fra AdobeFonts-->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <!--google icons-->
     <link href="stylesheet.css" rel="stylesheet" />
   </head>
   <body>
-    <header>
-      <img src="images/SquareEyes_Logo.png" alt="Logo of Square Eyes" class="logo"/>
+    <header class="nav__panel">
+      <img
+        src="images/SquareEyes_Logo.png"
+        alt="Logo of Square Eyes"
+        class="logo"
+      />
       <nav>
+        <div class="material-symbols-outlined icon__circle">Home</div>
+        <div class="material-symbols-outlined icon__circle">Search</div>
+        <div class="material-symbols-outlined icon__circle">Shopping_Basket</div>
+        <div>
+          <img
+            src="../images/sign-in.jpeg"
+            alt="avatar__2"
+            class="cta__avatar"
+          />
+        </div>
         <!--this will show only after logging in-->
         <!--mobile: basket and hamburegr menu icons-->
-        <!--desktop: house, magnifying glass, basket, avatar icons-->
+        <!--desktop: house, magnifying glass, basket, avatar icon-->
       </nav>
     </header>
     <main>
       <section>
         <h1>Today's Film</h1>
-        <div id="todays-film">
-            <img src="images/yellow-asia.jpeg" alt="A girl and the yellow background">
+        <div>
+          <img
+            src="images/yellow-asia.jpeg"
+            alt="A girl and the yellow background"
+            id="todays-film"
+          />
         </div>
-        <!--big pic goes here, not carousel-->
       </section>
       <section>
         <!--This section should appear after logging in-->
         <h1>Continue Watching</h1>
-        <section>#</section>
+        <section>
+            <div>
+                <img src="images/funfair.jpeg" alt="Funfair" class="film__carousel__continue-watching">
+            </div>
+            <div>
+                <img src="images/3.jpeg" alt="3" class="film__carousel__continue-watching">
+            </div>
+            <div>
+                <img src="images/home-alone.jpeg" alt="Home alone" class="film__carousel__continue-watching">
+            </div>
+            <div>
+                <img src="images/taking-photos.jpeg" alt="Taking photos" class="film__carousel__continue-watching">
+            </div>
+        </section>
         <!--carousel goes here-->
       </section>
       <section>
         <h1>New</h1>
-        <section>#</section>
+        <section>
+            <div>
+                <img src="images/on-the-road.jpeg" alt="On the road" class="film__carousel__general">
+            </div>
+            <div>
+                <img src="images/after-hours.jpeg" alt="After hours" class="film__carousel__general">
+            </div>
+            <div>
+                <img src="images/in-the-water.jpeg" alt="In the water" class="film__carousel__general">
+            </div>
+            <div>
+                <img src="images/taking-photos.jpeg" alt="Taking photos" class="film__carousel__general">
+            </div>
+            <div>
+                <img src="images/funfair.jpeg" alt="Funfair" class="film__carousel__general">
+            </div>
+            <div>
+                <img src="images/metro.jpeg" alt="metro" class="film__carousel__general">
+            </div>
+            <div>
+                <img src="images/home-alone.jpeg" alt="Home alone" class="film__carousel__general">
+            </div>
+            <div>
+                <img src="images/window-night.jpeg" alt="Window by night" class="film__carousel__general">
+            </div>
+        </section>
         <!--carousel goes here-->
       </section>
       <section>
         <h1>Drama</h1>
-        <section>#</section>
+        <section>
+            <div>
+                <img src="images/window-depression.jpeg" alt="Depression" class="film__carousel__general">
+            </div>
+            <div>
+                <img src="images/ny-metro.jpeg" alt="New York's metro" class="film__carousel__general">
+            </div>
+            <div>
+                <img src="images/motel.jpeg" alt="Motel" class="film__carousel__general">
+            </div>
+            <div>
+                <img src="images/taking-photos.jpeg" alt="Taking photos" class="film__carousel__general">
+            </div>
+            <div>
+                <img src="images/pink.jpeg" alt="Pink" class="film__carousel__general">
+            </div>
+            <div>
+                <img src="images/by-the-sea.jpeg" alt="By the sea" class="film__carousel__general">
+            </div>
+            <div>
+                <img src="images/home-alone.jpeg" alt="Home alone" class="film__carousel__general">
+            </div>
+            <div>
+                <img src="images/young-mum.jpeg" alt="Young mum" class="film__carousel__general">
+            </div>
+        </section>
         <!--carousel goes here-->
       </section>
       <section>
         <h1>Documentary</h1>
-        <section>#</section>
+        <section>
+            <div>
+                <img src="images/with-friends.jpeg" alt="Friends" class="film__carousel__general">
+            </div>
+            <div>
+                <img src="images/geisha.jpeg" alt="Geisha" class="film__carousel__general">
+            </div>
+            <div>
+                <img src="images/motel.jpeg" alt="Motel" class="film__carousel__general">
+            </div>
+            <div>
+                <img src="images/my-camera.jpeg" alt="My camera" class="film__carousel__general">
+            </div>
+            <div>
+                <img src="images/yellow-asia.jpeg" alt="A girl and the yellow background" class="film__carousel__general">
+            </div>
+            <div>
+                <img src="images/after-hours.jpeg" alt="After hours" class="film__carousel__general">
+            </div>
+            <div>
+                <img src="images/home-alone.jpeg" alt="Home alone" class="film__carousel__general">
+            </div>
+            <div>
+                <img src="images/funfair.jpeg" alt="Funfair" class="film__carousel__general">
+            </div>
+        </section>
         <!--carousel goes here-->
       </section>
       <section>
         <h1>Great Collections:<br />Japan</h1>
-        <section>#</section>
+        <section>
+            <div>
+                <img src="images/japan-street.jpeg" alt="Japanese shop" class="film__carousel__general">
+            </div>
+            <div>
+                <img src="images/3.jpeg" alt="3" class="film__carousel__general">
+            </div>
+            <div>
+                <img src="images/pink.jpeg" alt="Pink" class="film__carousel__general">
+            </div>
+            <div>
+                <img src="images/geisha.jpeg" alt="Geisha" class="film__carousel__general">
+            </div>
+            <div>
+                <img src="images/yellow-asia.jpeg" alt="A girl and the yellow background" class="film__carousel__general">
+            </div>
+            <div>
+                <img src="images/window-depression.jpeg" alt="Depression" class="film__carousel__general">
+            </div>
+            <div>
+                <img src="images/window-night.jpeg" alt="Window by night" class="film__carousel__general">
+            </div>
+            <div>
+                <img src="images/by-the-sea.jpeg" alt="By the sea" class="film__carousel__general">
+            </div>
+        </section>
         <!--carousel goes here-->
       </section>
     </main>
