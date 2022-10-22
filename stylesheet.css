@@ -1,10 +1,39 @@
 /* general */
+* {
+    box-sizing: border-box;
+}
+
 body{
     font-family: 'Montserrat', sans-serif;
    color: #FFFFFF;
    background: #0D0D0D;
+    margin: 0;
+    font-size: medium;
+}
+
+/*font size note: ARE THEY TOO BIG? 
+medium = 16px = body
+todays film approx. 96 px= 600% TOO BIG???
+h1 = categories = 300%
+h2
+h3 = info about film = 80%
+*/
+
+.todays-film {
+    font-size: 500%;
+    font-weight: bold;
+    margin-bottom: 40px;
     
 }
+
+h1 {font-size: 300%;
+    font-weight: bold;}
+
+h2 {font-size: 200%;
+    font-weight: bold;}
+
+h3 {font-size: 80%;}
+
 
 /* h3 {
     font-family: acumin-pro, sans-serif;
@@ -16,12 +45,24 @@ body{
     background-color: #D9D9D9;
     border: solid #0D0D0D 1px;
     border-radius: 0% 0% 32px 0%;
-    
+    width: 100%; /* but change to 50% or less for nav before logging in*/
+    height: 80px; /* im not sure if i need it since .logo can decide over height*/
+
 }
+
+/*.nav__panel__items {
+    display: inline-block;
+} */
+
+.nav__panel__item {
+    display: inline-block;
+}
+
 
 .logo {
     width: 165px;
-    height: 63px;
+    height: 64px;
+    padding: 8px;
 }
 
 /* icons in nav */
@@ -56,9 +97,11 @@ body{
 }
 
 /* films' snapshots */
-#todays-film { /* remember to fix scaling -> responsive image! */
+#todays-film__img { /* remember to fix scaling -> responsive image! */
     border: solid #D9D9D9 1px;
     border-radius: 0% 0% 12px 0%;
+    margin-top: 0px;
+    
 }
 
 .film__carousel__continue-watching {
