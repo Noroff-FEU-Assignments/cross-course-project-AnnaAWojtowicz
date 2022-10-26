@@ -11,7 +11,12 @@ body {
   font-size: medium;
 }
 
+.main {
+  margin-top: 160px;
+}
+
 .main-style {
+  /* % let the margin adjust to the portview*/
   margin-left: 140px;
   margin-right: 140px;
 }
@@ -74,12 +79,25 @@ h3 {
 /* nav */
 
 .nav__panel {
+  position: fixed;
+  top: 0;
   background-color: #d9d9d9;
   border: solid #0d0d0d 1px;
   border-radius: 0% 0% 32px 0%;
   width: 100%; /* but change to 50% or less for nav before logging in*/
   height: 80px; /* im not sure if i need it since .logo can decide over height*/
   margin-left: 0;
+}
+
+.nav__left,
+.nav__right {
+  display: inline-block;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.nav__right {
+  float: right;
 }
 
 /*.nav__panel__items {
@@ -92,7 +110,7 @@ h3 {
 
 .logo {
   width: 165px;
-  height: 64px;
+  height: 70px;
   padding: 8px;
 }
 
@@ -114,6 +132,7 @@ h3 {
   border-radius: 50%;
   width: 64px;
   height: 64px;
+  margin: 4px;
   position: relative;
 }
 
@@ -122,6 +141,7 @@ h3 {
   height: 64px;
   border-radius: 50%;
   border: 1px;
+  margin: 4px;
 }
 
 /* films' snapshots */
@@ -182,7 +202,8 @@ h3 {
 
 /*links' decoration*/
 
-a:link, :visited  {
-    color: #ffffff;
-    text-decoration: none;
+a:link,
+:visited {
+  color: #ffffff;
+  text-decoration: none;
 }
