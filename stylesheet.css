@@ -19,6 +19,14 @@ body {
   /* % let the margin adjust to the portview*/
   margin-left: 140px;
   margin-right: 140px;
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.main-style__carousel {
+    display: flex;
 }
 
 /*footer-sites*/
@@ -85,8 +93,8 @@ h3 {
   border: solid #0d0d0d 1px;
   border-radius: 0% 0% 32px 0%;
   width: 100%; /* but change to 50% or less for nav before logging in*/
-  height: 80px; /* im not sure if i need it since .logo can decide over height*/
   margin-left: 0;
+  display: flex;
 }
 
 .nav__left,
@@ -96,13 +104,11 @@ h3 {
   margin-right: 10px;
 }
 
-.nav__right {
-  float: right;
-}
 
 /*.nav__panel__items {
     display: inline-block;
 } */
+
 
 .nav__panel__item {
   display: inline-block;
@@ -110,7 +116,7 @@ h3 {
 
 .logo {
   width: 165px;
-  height: 70px;
+  height: 78px;
   padding: 8px;
 }
 
@@ -121,27 +127,22 @@ h3 {
   font-variation-settings: "FILL" 0, "wght" 200, "GRAD" 0, "opsz" 48;
   color: #0d0d0d;
   text-align: center;
-  font-size: 50px;
-  padding: 6px 0 0 0;
-  margin: 0;
+  font-size: 52px;
+  margin: 4px;
+  padding: 2px;
+  border-radius: 50%;
+  border: solid #0d0d0d 1px;
+  
 }
 
-.icon__circle {
-  /* remember to align it to center*/
-  border: solid #0d0d0d 1px;
-  border-radius: 50%;
-  width: 64px;
-  height: 64px;
-  margin: 4px;
-  position: relative;
-}
 
 .cta__avatar {
-  width: 64px;
-  height: 64px;
+  width: 58px;
+  height: 58px;
   border-radius: 50%;
   border: 1px;
   margin: 4px;
+  
 }
 
 /* films' snapshots */
@@ -150,16 +151,22 @@ h3 {
   border: solid #d9d9d9 1px;
   border-radius: 0% 0% 12px 0%;
   margin-top: 0px;
+  width: 1100px;
+  height: 728px;
 }
 
 .film__carousel__continue-watching {
   border: solid #d9d9d9 1px;
   border-radius: 0% 0% 24px 0%;
+  width: 432px;
+  height: 286px;
 }
 
 .film__carousel__general {
   border: solid #d9d9d9 1px;
   border-radius: 0% 0% 24px 0%;
+  width: 432px;
+  height: 286px;
 }
 
 /* cta */
