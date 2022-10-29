@@ -20,13 +20,12 @@ body {
   margin-left: 140px;
   margin-right: 140px;
   margin-top: 70px;
-  display: flex;
-  flex-direction: column;
-
+  /*display: flex;
+  flex-direction: column;   figure out if cta should be inside flex or not*/ 
 }
 
 .main-style__carousel {
-    display: flex;
+  display: flex;
 }
 
 /*footer-sites*/
@@ -85,40 +84,37 @@ h3 {
 } */ /* maybe will use it*/
 
 /* nav */
-
-.nav__panel {
+.main-header {
   position: fixed;
   top: 0;
   background-color: #d9d9d9;
   border: solid #0d0d0d 1px;
   border-radius: 0% 0% 32px 0%;
   width: 100%; /* but change to 50% or less for nav before logging in*/
-  margin-left: 0;
-  display: flex;
 }
 
-.nav__left,
-.nav__right {
-  display: inline-block;
-  margin-left: 10px;
-  margin-right: 10px;
-}
-
-
-/*.nav__panel__items {
-    display: inline-block;
-} */
-
-
-.nav__panel__item {
-  display: inline-block;
-}
-
-.logo {
+.main-header__logo {
   width: 165px;
   height: 78px;
   padding: 8px;
+  display: inline-block;
+  vertical-align: middle;
 }
+
+.nav__panel {
+  display: inline-block;
+  text-align: right;
+  /*width: calc(100% - 200px);*/
+}
+
+.nav__symbols-list {
+ /* list-style: none;  its not necessary since padding is 0, but can be used just to be extra sure */
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+  vertical-align: middle;
+}
+
 
 /* icons in nav */
 
@@ -127,22 +123,43 @@ h3 {
   font-variation-settings: "FILL" 0, "wght" 200, "GRAD" 0, "opsz" 48;
   color: #0d0d0d;
   text-align: center;
-  font-size: 52px;
-  margin: 4px;
+  font-size: 40px;
+  margin: 0;
   padding: 2px;
   border-radius: 50%;
   border: solid #0d0d0d 1px;
-  
+  vertical-align: middle;
+}
+
+/* hack from: https://stackoverflow.com/questions/22786357/anchor-tag-is-larger-than-element-it-holds */
+.material-symbols-outlined a {
+  color: #0d0d0d;
+  margin: 4px;
+  display: block;
+}
+
+.material-symbols-outlined:hover {
+  border: solid #0d0d0d 2px;
+  border-radius: 50%;
+}
+
+.material-symbols-outlined__avatar {
+  height: 54px;
+  width: 54px;
+  padding: 0px;
+  margin: 0px;
+  display: inline-block;
+  vertical-align: middle;
 }
 
 
 .cta__avatar {
-  width: 58px;
-  height: 58px;
+  width: 54px;
+  height: 54px;
   border-radius: 50%;
-  border: 1px;
-  margin: 4px;
-  
+  border: solid #0d0d0d 1px;
+  display: inline-block;
+  vertical-align: middle;
 }
 
 /* films' snapshots */
@@ -170,8 +187,13 @@ h3 {
 }
 
 /* cta */
-
 .cta {
+  text-align: center;
+  background-color: #0d0d0d;
+  padding: 8px 16px;
+  border: solid #d9d9d9 1px;
+  border-radius: 4px;
+  display: inline-block;
 }
 
 .cta__sign-in-or-register {
