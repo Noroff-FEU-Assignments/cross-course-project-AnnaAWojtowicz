@@ -11,15 +11,11 @@ body {
   font-size: medium;
 }
 
-.main {
-  margin-top: 160px;
-}
-
 .main-style {
   /* % let the margin adjust to the portview*/
   margin-left: 140px;
   margin-right: 140px;
-  margin-top: 70px;
+  margin-top: 120px;
   /*display: flex;
   flex-direction: column;   figure out if cta should be inside flex or not*/ 
 }
@@ -192,6 +188,15 @@ h3 {
   background-color: #0d0d0d;
   padding: 8px 16px;
   border: solid #d9d9d9 1px;
+  border-radius: 4px;
+  display: inline-block;
+}
+
+.cta:hover {
+  text-align: center;
+  background-color: #0d0d0d;
+  padding: 8px 16px;
+  border: solid #d9d9d9 2px;
   border-radius: 4px;
   display: inline-block;
 }
