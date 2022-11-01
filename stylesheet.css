@@ -141,18 +141,12 @@ h3 {
 
 /*footer-sites*/
 
-.footer-sites__background-style,
+/* .footer-sites__background-style,
 .shop-sites__background-style,
 .sign-in-or-reg-sites__background-style {
   background-repeat: repeat-y;
   background-size: cover;
-  /* background: rgb(13,13,13);
-  background: linear-gradient(90deg, rgba(13,13,13,0.8048406862745098) 100%, rgba(13,13,13,0.796437324929972) 100%);  it doesn't help */
-}
-
-
-
-
+} */
 
 .sign-in-or-reg-sites__background-pic-link {
   background-image: url("../images/by-the-sea.jpeg");
@@ -166,6 +160,12 @@ h3 {
   background-image: url("../images/on-the-road.jpeg");
 }
 
+/*does it even works????*/
+.overlay {
+  background-size: cover;
+  background-color: rgba(13, 13, 13, 1)
+ 
+}
 
 /* films' snapshots */
 
@@ -243,6 +243,41 @@ h3 {
 }
 .cta__fav {
 }
+
+/*footer*/
+
+
+
+
+.footer__main-style {
+  margin-top: 150px;
+  margin-bottom: 50px;
+}
+
+
+.footer__section-style {
+  list-style: none;
+  display: inline-block;
+  width: 30%;
+  vertical-align: top;
+  line-height: 30px;
+  
+}
+
+/*does it work???*/
+.footer__icons {
+  vertical-align: middle;
+}
+
+.footer__section-style div {
+  display: inline-block;
+}
+
+.fa-brands {
+  font-size: xxx-large;
+  margin: 0 10px;
+}
+
 
 /*links' decoration*/
 
