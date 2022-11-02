@@ -249,6 +249,8 @@ h3 {
 .footer__main-style {
   margin-top: 150px;
   margin-bottom: 50px;
+  display: flex;
+  align-items: flex-start;
 }
 
 .footer__section-style {
@@ -261,10 +263,9 @@ h3 {
 
 .footer__section-style-icons {
   list-style: none;
-  display: inline-block;
   width: 30%;
-  vertical-align: middle;  /*funker ikke!*/
   line-height: 30px;
+  align-self: center;
 }
 
 .footer__ul-style {
@@ -273,13 +274,41 @@ h3 {
 
 .footer__icons li{
   display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+
+
+
+  /*
+    display: flex;
+    width: 76px;
+    height: 76px;
+    background-color: pink;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin: 18px;
+  */
 }
 
 .fa-brands {
-  font-size: xxx-large;
-  margin: 0 10px;
+  font-size: xx-large;
+  width: 54px;
+  height: 54px;
+  margin: 0 5px;
+  color: #0d0d0d;
+  background-color: #ffffff;
+  text-align: center;
+  padding: 10px;
+  border-radius: 50%;
+  border: solid #0d0d0d 1px;
+  vertical-align: middle;
+  
 }
 
+.fa-brands a {
+  display: block;
+}
 
 /*links' decoration*/
 
@@ -287,4 +316,8 @@ a:link,
 :visited {
   color: #ffffff;
   text-decoration: none;
+}
+
+a:hover {
+  font-weight: bold;
 }
