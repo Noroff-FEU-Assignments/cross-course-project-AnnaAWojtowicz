@@ -246,30 +246,32 @@ h3 {
 
 /*footer*/
 
-
-
-
 .footer__main-style {
   margin-top: 150px;
   margin-bottom: 50px;
 }
-
 
 .footer__section-style {
   list-style: none;
   display: inline-block;
   width: 30%;
   vertical-align: top;
+  line-height: 30px; 
+}
+
+.footer__section-style-icons {
+  list-style: none;
+  display: inline-block;
+  width: 30%;
+  vertical-align: middle;  /*funker ikke!*/
   line-height: 30px;
-  
 }
 
-/*does it work???*/
-.footer__icons {
-  vertical-align: middle;
-}
+.footer__ul-style {
+  list-style: none;
+} 
 
-.footer__section-style div {
+.footer__icons li{
   display: inline-block;
 }
 
