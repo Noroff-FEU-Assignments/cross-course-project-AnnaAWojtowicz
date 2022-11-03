@@ -60,6 +60,20 @@ h3 {
     font-family: acumin-pro, sans-serif;
 } */ /* maybe will use it*/
 
+
+/*nav when not logged in*/
+.logo__landing-site {
+  width: 165px;
+  height: 78px;
+  padding: 8px 12px;
+  display: inline-block;
+  vertical-align: middle;
+  background-color: #d9d9d9;
+  border: solid #0d0d0d 1px;
+  border-radius: 0% 0% 32px 0%;
+}
+
+
 /* nav */
 .main-header {
   position: fixed;
@@ -160,6 +174,36 @@ h3 {
   background-image: url("../images/on-the-road.jpeg");
 }
 
+.landing-site__main-style {
+  margin-top: 10px;
+}
+
+.landing-site__main-style__sign-in-or-register {
+  margin-top: 100px;
+}
+
+.landing-site__sign-in-or-register {
+  display: block;
+  text-align: center;
+}
+
+.avatar-and-fill-in {
+  width: 100%;
+  text-align: center;
+}
+
+.avatar-and-fill-in__form {
+  display: inline-block;
+  text-align: left;
+}
+
+.landing-site__register, .landing-site__sign-in {
+  display: inline-block;
+text-align: center;
+padding: 0 20px;
+
+}
+
 /*does it even works????*/
 .overlay {
   background-size: cover;
@@ -168,7 +212,6 @@ h3 {
 }
 
 /* films' snapshots */
-
 .film__carousel__continue-watching {
   border: solid #d9d9d9 1px;
   border-radius: 0% 0% 24px 0%;
