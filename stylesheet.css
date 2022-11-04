@@ -70,6 +70,7 @@ h3 {
   vertical-align: middle;
   background-color: #d9d9d9;
   border: solid #0d0d0d 1px;
+  border-top: none;
   border-radius: 0% 0% 32px 0%;
 }
 
@@ -81,6 +82,7 @@ h3 {
   background-color: #d9d9d9;
   border: solid #0d0d0d 1px;
   border-radius: 0% 0% 32px 0%;
+  border-top: none;
   width: 100%; /* but change to 50% or less for nav before logging in*/
 }
 
@@ -258,7 +260,11 @@ padding: 0 20px;
   width: 128px;
   height: 128px;
   border-radius: 50%;
-  border: 1px;
+  border: solid #d9d9d9 1px;
+}
+
+.cta__sign-in-or-register:hover {
+  border: solid #d9d9d9 2px;
 }
 
 .cta__go-back {
@@ -363,4 +369,43 @@ a:link,
 
 a:hover {
   font-weight: bold;
+}
+
+/* shopping */
+
+.shopping-progress {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  font-size: 38px
+}
+
+.shopping-progress div {
+  display: inline-block;
+  color: #0D0D0D;
+  font-weight: bold; 
+}
+
+.shopping-progress__number {
+  height: 54px;
+  width: 54px;
+  border: solid #0D0D0D 3px;
+  background-color: #d9d9d9;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+
+.shopping-progress__hyphen {
+  height: 54px;
+  width: 30px;
+}
+
+.shopping-progress .your-basket,
+.shopping-progress .payment {
+  color: #8F8F8F;
+  border: solid #8F8F8F 3px;
+}
+
+.shopping-progress .your-basket__hyphen {
+  color: #8F8F8F;
 }
