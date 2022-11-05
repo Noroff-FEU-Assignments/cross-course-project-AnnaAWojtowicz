@@ -3,6 +3,10 @@
   box-sizing: border-box;
 }
 
+html, body {
+  height: 100%;
+}
+
 body {
   font-family: "Montserrat", Verdana, Geneva, Tahoma, sans-serif;
   color: #ffffff;
@@ -10,6 +14,15 @@ body {
   margin: 0;
   font-size: medium;
 }
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/*a:hover {
+  font-weight: bold;
+}*/
 
 .main-style {
   /* % let the margin adjust to the portview*/
@@ -134,7 +147,9 @@ h3 {
 .material-symbols-outlined:hover {
   border: solid #0d0d0d 2px;
   border-radius: 50%;
-}
+   margin: -1px;
+  text-shadow: .25px 0px .5px, -.25px 0px .5px;
+} 
 
 .material-symbols-outlined__avatar {
   height: 54px;
@@ -166,6 +181,7 @@ h3 {
 
 .sign-in-or-reg-sites__background-pic-link {
   background-image: url("../images/by-the-sea.jpeg");
+
 }
 
 .footer-sites__background-pic-link {
@@ -173,7 +189,14 @@ h3 {
 }
 
 .shop-sites__background-pic-link {
-  background-image: url("../images/on-the-road.jpeg");
+   background-image: linear-gradient(
+    rgba(0,0,0,0.4),
+    rgba(0,0,0,0.4)
+    ), url("../images/on-the-road.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100%;
 }
 
 .landing-site__main-style {
@@ -245,15 +268,17 @@ padding: 0 20px;
   border: solid #d9d9d9 1px;
   border-radius: 4px;
   display: inline-block;
+  cursor: pointer;
+}
+
+.cta a {
+  color: #d9d9d9;
 }
 
 .cta:hover {
-  text-align: center;
-  background-color: #0d0d0d;
-  padding: 8px 16px;
   border: solid #d9d9d9 2px;
-  border-radius: 4px;
-  display: inline-block;
+  margin: -1px; /* Forebygger at ting ikke beveger seg da border blir tjukkere */
+  text-shadow: .25px 0px .5px, -.25px 0px .5px;
 }
 
 .cta__sign-in-or-register {
@@ -359,17 +384,9 @@ padding: 0 20px;
   display: block;
 }
 
-/*links' decoration*/
 
-a:link,
-:visited {
-  color: #ffffff;
-  text-decoration: none;
-}
 
-a:hover {
-  font-weight: bold;
-}
+
 
 /* shopping */
 
@@ -409,3 +426,46 @@ a:hover {
 .shopping-progress .your-basket__hyphen {
   color: #8F8F8F;
 }
+
+
+/* film window */
+
+.main-style__carousel__film {
+  border: solid #d9d9d9 1px;
+  border-radius: 0% 0% 24px 0%;
+  width: 432px;
+  height: 286px; 
+}
+
+.slettmeg {
+  background-color: lightgray;
+  padding: 12px;
+}
+
+.material-symbols-rounded {
+  display: inline-block;
+  color: #0d0d0d;
+  text-align: center;
+  height: 32px;
+  width: 32px;
+  margin: 0;
+  padding-top: 3px;
+  border-radius: 50%;
+  border: solid #ffffff 1px;
+  background-color: #ffffff;
+  vertical-align: middle;
+  cursor: pointer;
+  }
+
+
+/* .material-symbols-rounded a {
+  display: inline-block;
+  text-align: center;
+  width: 32px;
+  height: 32px;
+} */
+
+
+.material-symbols-rounded:hover {
+  text-shadow: .25px 0px .1px, -.25px 0px .1px;
+} 
