@@ -92,6 +92,7 @@ h3 {
 /* nav */
 .main-header {
   position: fixed;
+  z-index: 999;
   top: 0;
   left: 0;
   background-color: #d9d9d9;
@@ -236,12 +237,6 @@ padding: 0 20px;
 
 }
 
-/*does it even works????*/
-.overlay {
-  background-size: cover;
-  background-color: rgba(13, 13, 13, 1)
- 
-}
 
 /* films' snapshots */
 .film__carousel__continue-watching {
@@ -261,7 +256,7 @@ padding: 0 20px;
 /*this one needs to stay here to be able to override (.film__carousel__general) when it comes to border radious and size*/
 .todays-film__img {
   border-radius: 0% 0% 48px 0%;
-  margin-top: -40px;
+  margin: -40px auto 0;
   width: 1100px;
   height: 728px;
 }
@@ -328,9 +323,8 @@ padding: 0 20px;
 /*footer*/
 
 .footer__main-style {
-  margin-top: 150px;
-  margin-bottom: 50px;
-  display: flex;
+  margin: 150px auto 50px;
+   display: flex;
   align-items: flex-start;
 }
 
@@ -443,16 +437,32 @@ padding: 0 20px;
 /* film window */
 
 .main-style__carousel__film {
+  
   border: solid #d9d9d9 1px;
   border-radius: 0% 0% 24px 0%;
   width: 432px;
   height: 286px; 
 }
 
-.slettmeg {
-  background-color: lightgray;
-  padding: 12px;
+.film-window {
+  position: relative;
 }
+
+.h1-in-the-film {
+  position: absolute;
+
+  margin: 0;
+  top: 15px;
+  left: 15px;
+}
+
+.icons-in-the-film {
+  position: absolute;
+
+  bottom: 15px;
+  right: 15px;
+}
+
 
 .material-symbols-rounded {
   display: inline-block;
@@ -481,3 +491,22 @@ padding: 0 20px;
 .material-symbols-rounded:hover {
   text-shadow: .25px 0px .1px, -.25px 0px .1px;
 } 
+
+/* account */
+.account__pic {
+position: relative;
+width: 732px;
+height: 484px;
+border-radius: 0 0 24px 0;
+border: solid #ffffff 1px;
+}
+
+.cta__avatar-account {
+position: absolute;
+width: 244px;
+height: 244px;
+border: solid #ffffff 3px;
+border-radius: 50%;
+top: 500px;
+left: 24px;
+}
