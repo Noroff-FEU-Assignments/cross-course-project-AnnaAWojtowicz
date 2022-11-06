@@ -26,9 +26,9 @@ a {
 
 .main-style {
   /* % let the margin adjust to the portview*/
-  margin-left: 140px;
-  margin-right: 140px;
-  margin-top: 120px;
+  margin-left: 70px;
+  margin-right: 70px;
+  margin-top: 70px;
   /*display: flex;
   flex-direction: column;   figure out if cta should be inside flex or not*/ 
 }
@@ -50,19 +50,20 @@ h3 = info about film = 80%
 .todays-film__h1 {
   font-size: 500%;
   font-weight: bold;
+  margin-top: 140px;
   margin-bottom: 20px;
-  margin-left: 80px;
-  margin-right: 80px;
 }
 
 h1 {
   font-size: 300%;
   font-weight: bold;
+  margin-top: 140px;
 }
 
 h2 {
   font-size: 200%;
   font-weight: bold;
+  margin: 16px 0;
 }
 
 h3 {
@@ -92,6 +93,7 @@ h3 {
 .main-header {
   position: fixed;
   top: 0;
+  left: 0;
   background-color: #d9d9d9;
   border: solid #0d0d0d 1px;
   border-radius: 0% 0% 32px 0%;
@@ -171,21 +173,26 @@ h3 {
 }
 
 /*footer-sites*/
-
-/* .footer-sites__background-style,
-.shop-sites__background-style,
-.sign-in-or-reg-sites__background-style {
-  background-repeat: repeat-y;
-  background-size: cover;
-} */
-
 .sign-in-or-reg-sites__background-pic-link {
-  background-image: url("../images/by-the-sea.jpeg");
-
+  background-image: linear-gradient(
+    rgba(0,0,0,0.4),
+    rgba(0,0,0,0.4)
+    ), url("../images/by-the-sea.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100%;
 }
 
 .footer-sites__background-pic-link {
-  background-image: url("../images/film-projector.jpeg");
+  background-image: linear-gradient(
+    rgba(0,0,0,0.4),
+    rgba(0,0,0,0.4)
+    ), url("../images/film-projector.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100%;
 }
 
 .shop-sites__background-pic-link {
@@ -254,7 +261,7 @@ padding: 0 20px;
 /*this one needs to stay here to be able to override (.film__carousel__general) when it comes to border radious and size*/
 .todays-film__img {
   border-radius: 0% 0% 48px 0%;
-  margin-top: 0px;
+  margin-top: -40px;
   width: 1100px;
   height: 728px;
 }
@@ -391,10 +398,15 @@ padding: 0 20px;
 /* shopping */
 
 .shopping-progress {
+  margin-top: 35px;
   display: inline-block;
   width: 100%;
   text-align: center;
   font-size: 38px
+}
+
+.h1-shopping {
+  margin-top: 35px;
 }
 
 .shopping-progress div {
