@@ -450,17 +450,15 @@ padding: 0 20px;
 
 .h1-in-the-film {
   position: absolute;
-
   margin: 0;
-  top: 15px;
+  top: 10px;
   left: 15px;
 }
 
 .icons-in-the-film {
   position: absolute;
-
   bottom: 15px;
-  right: 15px;
+  right: 12px;
 }
 
 
@@ -468,12 +466,12 @@ padding: 0 20px;
   display: inline-block;
   color: #0d0d0d;
   text-align: center;
-  height: 32px;
-  width: 32px;
-  margin: 0;
-  padding-top: 3px;
+  height: 36px;
+  width: 36px;
+  margin: 0 3px;
+  padding-top: 5px;
   border-radius: 50%;
-  border: solid #ffffff 1px;
+  border: solid #0D0D0D 1px;
   background-color: #ffffff;
   vertical-align: middle;
   cursor: pointer;
@@ -509,6 +507,7 @@ border: solid #ffffff 1px;
 
 .cta__avatar-account {
 position: absolute;
+background-size: 100%;
 width: 200px;
 height: 200px;
 border: solid #ffffff 3px;
