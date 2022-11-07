@@ -196,6 +196,8 @@ h3 {
   height: 100%;
 }
 
+
+
 .shop-sites__background-pic-link {
    background-image: linear-gradient(
     rgba(0,0,0,0.4),
@@ -206,6 +208,8 @@ h3 {
   background-position: center;
   height: 100%;
 }
+
+
 
 .landing-site__main-style {
   margin-top: 10px;
@@ -239,12 +243,6 @@ padding: 0 20px;
 
 
 /* films' snapshots */
-.film__carousel__continue-watching {
-  border: solid #d9d9d9 1px;
-  border-radius: 0% 0% 24px 0%;
-  width: 432px;
-  height: 286px;
-}
 
 .film__carousel__general {
   border: solid #d9d9d9 1px;
@@ -255,11 +253,14 @@ padding: 0 20px;
 
 /*this one needs to stay here to be able to override (.film__carousel__general) when it comes to border radious and size*/
 .todays-film__img {
+  border: solid #d9d9d9 1px;
   border-radius: 0% 0% 48px 0%;
-  margin: -40px auto 0;
   width: 1100px;
   height: 728px;
+  margin-left: 70px;
+  margin-right: 70px;
 }
+
 
 
 /* cta */

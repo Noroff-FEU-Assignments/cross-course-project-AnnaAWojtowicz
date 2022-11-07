@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
     <!--google icons-->
     <script src="https://kit.fontawesome.com/c1f5e20bb4.js" crossorigin="anonymous"></script> <!-- from font awsome-->
+    <link href="carousel.css" rel="stylesheet" />
     <link href="stylesheet.css" rel="stylesheet" />
   </head>
   <body>
@@ -60,42 +61,41 @@
     <main class="main-style">
       <section>
         <h1 class="todays-film__h1">Today's Film</h1>
-        <div class="main-style">
-          <img
-            src="images/yellow-asia.jpeg"
-            alt="A girl and the yellow background"
-            class="film__carousel__general todays-film__img"
-          />
-        </div>
+        <div class="todays-film__img all-pic-carousel" id="pic-todays-film"></div>
       </section>
+
       <section class="main-style">
         <!--This section should appear after logging in-->
         <h2>Continue Watching</h2>
         <section class="main-style__carousel">
+
           <div class="film-window">
             <h1 class="h1-in-the-film">Title</h1>
-            <img src="images/funfair.jpeg" alt="Funfair" class="film__carousel__continue-watching">
+            <div class="film__carousel__general all-pic-carousel" id="pic-carousel__funfair"></div>
             <section class="icons-in-the-film">
               <div class="material-symbols-rounded play"><a href="#">play_circle</a></div>
             </section>
           </div>
+
           <div class="film-window">
             <h1 class="h1-in-the-film">Title</h1>
-            <img src="images/3.jpeg" alt="3" class="film__carousel__continue-watching">
+            <div class="film__carousel__general all-pic-carousel" id="pic-carousel__3"></div>
             <section class="icons-in-the-film">
               <div class="material-symbols-rounded play"><a href="#">play_circle</a></div>
             </section>
           </div>
+
           <div class="film-window">
             <h1 class="h1-in-the-film">Title</h1>
-            <img src="images/home-alone.jpeg" alt="Home alone" class="film__carousel__continue-watching">
+            <div class="film__carousel__general all-pic-carousel" id="pic-carousel__home-alone"></div>
             <section class="icons-in-the-film">
               <div class="material-symbols-rounded play"><a href="#">play_circle</a></div>
             </section>
           </div>
+
           <div class="film-window">
             <h1 class="h1-in-the-film">Title</h1>
-            <img src="images/taking-photos.jpeg" alt="Taking photos" class="film__carousel__continue-watching">
+            <div class="film__carousel__general all-pic-carousel" id="pic-carousel__taking-photos"></div>
             <section class="icons-in-the-film">
               <div class="material-symbols-rounded play"><a href="#">play_circle</a></div>
             </section>
@@ -103,13 +103,16 @@
         </section>
         <!--carousel goes here-->
       </section>
+
+
+
       <section class="main-style">
         <h2>New</h2>
         <section class="main-style__carousel">
 
           <div class="film-window">
             <h1 class="h1-in-the-film">Title</h1>
-            <img src="images/on-the-road.jpeg" alt="On the road" class="film__carousel__general">
+            <div class="film__carousel__general all-pic-carousel" id="pic-carousel__on-the-road"></div>
             <section class="icons-in-the-film">
               <div class="material-symbols-rounded delete"><a href="#">delete</a></div>
               <div class="material-symbols-rounded favorite"><a href="#">favorite</a></div>
@@ -119,7 +122,7 @@
 
           <div class="film-window">
             <h1 class="h1-in-the-film">Title</h1>
-            <img src="images/after-hours.jpeg" alt="After hours" class="film__carousel__general">
+            <div class="film__carousel__general all-pic-carousel" id="pic-carousel__after-hours"></div>
             <section class="icons-in-the-film">
               <div class="material-symbols-rounded delete"><a href="#">delete</a></div>
               <div class="material-symbols-rounded favorite"><a href="#">favorite</a></div>
@@ -129,7 +132,7 @@
 
           <div class="film-window">
             <h1 class="h1-in-the-film">Title</h1>
-            <img src="images/in-the-water.jpeg" alt="In the water" class="film__carousel__general">
+            <div class="film__carousel__general all-pic-carousel" id="pic-carousel__in-the-water"></div>
             <section class="icons-in-the-film">
               <div class="material-symbols-rounded delete"><a href="#">delete</a></div>
               <div class="material-symbols-rounded favorite"><a href="#">favorite</a></div>
@@ -140,7 +143,7 @@
 
           <div class="film-window">
             <h1 class="h1-in-the-film">Title</h1>
-            <img src="images/taking-photos.jpeg" alt="Taking photos" class="film__carousel__general">
+            <div class="film__carousel__general all-pic-carousel" id="pic-carousel__taking-photos"></div>
             <section class="icons-in-the-film">
               <div class="material-symbols-rounded delete"><a href="#">delete</a></div>
               <div class="material-symbols-rounded favorite"><a href="#">favorite</a></div>
@@ -150,7 +153,7 @@
 
           <div class="film-window">
             <h1 class="h1-in-the-film">Title</h1>
-            <img src="images/funfair.jpeg" alt="Funfair" class="film__carousel__general">
+            <div class="film__carousel__general all-pic-carousel" id="pic-carousel__funfair"></div>
             <section class="icons-in-the-film">
               <div class="material-symbols-rounded delete"><a href="#">delete</a></div>
               <div class="material-symbols-rounded favorite"><a href="#">favorite</a></div>
@@ -160,7 +163,7 @@
 
           <div class="film-window">
             <h1 class="h1-in-the-film">Title</h1>
-            <img src="images/metro.jpeg" alt="metro" class="film__carousel__general">
+            <div class="film__carousel__general all-pic-carousel" id="pic-carousel__metro"></div>
             <section class="icons-in-the-film">
               <div class="material-symbols-rounded delete"><a href="#">delete</a></div>
               <div class="material-symbols-rounded favorite"><a href="#">favorite</a></div>
@@ -170,7 +173,7 @@
 
           <div class="film-window">
             <h1 class="h1-in-the-film">Title</h1>
-            <img src="images/home-alone.jpeg" alt="Home alone" class="film__carousel__general">
+            <div class="film__carousel__general all-pic-carousel" id="pic-carousel__home-alone"></div>
             <section class="icons-in-the-film">
               <div class="material-symbols-rounded delete"><a href="#">delete</a></div>
               <div class="material-symbols-rounded favorite"><a href="#">favorite</a></div>
@@ -180,7 +183,7 @@
           
           <div class="film-window">
             <h1 class="h1-in-the-film">Title</h1>
-            <img src="images/window-night.jpeg" alt="Window by night" class="film__carousel__general">
+            <div class="film__carousel__general all-pic-carousel" id="pic-carousel__window-night"></div>
             <section class="icons-in-the-film">
               <div class="material-symbols-rounded delete"><a href="#">delete</a></div>
               <div class="material-symbols-rounded favorite"><a href="#">favorite</a></div>
@@ -198,7 +201,7 @@
 
           <div class="film-window">
             <h1 class="h1-in-the-film">Title</h1>
-            <img src="images/window-depression.jpeg" alt="Depression" class="film__carousel__general">
+            <div class="film__carousel__general all-pic-carousel" id="pic-carousel__window-depression"></div>
             <section class="icons-in-the-film">
               <div class="material-symbols-rounded delete"><a href="#">delete</a></div>
               <div class="material-symbols-rounded favorite"><a href="#">favorite</a></div>
@@ -208,7 +211,7 @@
 
           <div class="film-window">
             <h1 class="h1-in-the-film">Title</h1>
-            <img src="images/ny-metro.jpeg" alt="New York's metro" class="film__carousel__general">
+            <div class="film__carousel__general all-pic-carousel" id="pic-carousel__ny-metro"></div>
             <section class="icons-in-the-film">
               <div class="material-symbols-rounded delete"><a href="#">delete</a></div>
               <div class="material-symbols-rounded favorite"><a href="#">favorite</a></div>
@@ -219,7 +222,7 @@
 
           <div class="film-window">
             <h1 class="h1-in-the-film">Title</h1>
-            <img src="images/motel.jpeg" alt="Motel" class="film__carousel__general">
+            <div class="film__carousel__general all-pic-carousel" id="pic-carousel__motel"></div>
             <section class="icons-in-the-film">
               <div class="material-symbols-rounded delete"><a href="#">delete</a></div>
               <div class="material-symbols-rounded favorite"><a href="#">favorite</a></div>
@@ -229,7 +232,7 @@
           
           <div class="film-window">
             <h1 class="h1-in-the-film">Title</h1>
-            <img src="images/taking-photos.jpeg" alt="Taking photos" class="film__carousel__general">
+            <div class="film__carousel__general all-pic-carousel" id="pic-carousel__taking-photos"></div>
             <section class="icons-in-the-film">
               <div class="material-symbols-rounded delete"><a href="#">delete</a></div>
               <div class="material-symbols-rounded favorite"><a href="#">favorite</a></div>
@@ -239,7 +242,7 @@
 
           <div class="film-window">
             <h1 class="h1-in-the-film">Title</h1>
-            <img src="images/pink.jpeg" alt="Pink" class="film__carousel__general">
+            <div class="film__carousel__general all-pic-carousel" id="pic-carousel__pink"></div>
             <section class="icons-in-the-film">
               <div class="material-symbols-rounded delete"><a href="#">delete</a></div>
               <div class="material-symbols-rounded favorite"><a href="#">favorite</a></div>
@@ -249,7 +252,7 @@
           
           <div class="film-window">
             <h1 class="h1-in-the-film">Title</h1>
-            <img src="images/by-the-sea.jpeg" alt="By the sea" class="film__carousel__general">
+            <div class="film__carousel__general all-pic-carousel" id="pic-carousel__by-the-sea"></div>
             <section class="icons-in-the-film">
               <div class="material-symbols-rounded delete"><a href="#">delete</a></div>
               <div class="material-symbols-rounded favorite"><a href="#">favorite</a></div>
@@ -259,7 +262,7 @@
 
           <div class="film-window">
             <h1 class="h1-in-the-film">Title</h1>
-            <img src="images/home-alone.jpeg" alt="Home alone" class="film__carousel__general">
+            <div class="film__carousel__general all-pic-carousel" id="pic-carousel__home-alone"></div>
             <section class="icons-in-the-film">
               <div class="material-symbols-rounded delete"><a href="#">delete</a></div>
               <div class="material-symbols-rounded favorite"><a href="#">favorite</a></div>
@@ -269,7 +272,7 @@
 
           <div class="film-window">
             <h1 class="h1-in-the-film">Title</h1>
-            <img src="images/young-mum.jpeg" alt="Young mum" class="film__carousel__general">
+            <div class="film__carousel__general all-pic-carousel" id="pic-carousel__young-mum"></div>
             <section class="icons-in-the-film">
               <div class="material-symbols-rounded delete"><a href="#">delete</a></div>
               <div class="material-symbols-rounded favorite"><a href="#">favorite</a></div>
@@ -286,7 +289,7 @@
 
           <div class="film-window">
             <h1 class="h1-in-the-film">Title</h1>
-            <img src="images/with-friends.jpeg" alt="Friends" class="film__carousel__general">
+            <div class="film__carousel__general all-pic-carousel" id="pic-carousel__with-friends"></div>
             <section class="icons-in-the-film">
               <div class="material-symbols-rounded delete"><a href="#">delete</a></div>
               <div class="material-symbols-rounded favorite"><a href="#">favorite</a></div>
@@ -296,7 +299,7 @@
 
           <div class="film-window">
             <h1 class="h1-in-the-film">Title</h1>
-            <img src="images/geisha.jpeg" alt="Geisha" class="film__carousel__general">
+            <div class="film__carousel__general all-pic-carousel" id="pic-carousel__geisha"></div>
             <section class="icons-in-the-film">
               <div class="material-symbols-rounded delete"><a href="#">delete</a></div>
               <div class="material-symbols-rounded favorite"><a href="#">favorite</a></div>
@@ -306,7 +309,7 @@
 
           <div class="film-window">
             <h1 class="h1-in-the-film">Title</h1>
-            <img src="images/motel.jpeg" alt="Motel" class="film__carousel__general">
+            <div class="film__carousel__general all-pic-carousel" id="pic-carousel__motel"></div>
             <section class="icons-in-the-film">
               <div class="material-symbols-rounded delete"><a href="#">delete</a></div>
               <div class="material-symbols-rounded favorite"><a href="#">favorite</a></div>
@@ -316,7 +319,7 @@
         
           <div class="film-window">
             <h1 class="h1-in-the-film">Title</h1>
-            <img src="images/my-camera.jpeg" alt="My camera" class="film__carousel__general">
+            <div class="film__carousel__general all-pic-carousel" id="pic-carousel__my-camera"></div>
             <section class="icons-in-the-film">
               <div class="material-symbols-rounded delete"><a href="#">delete</a></div>
               <div class="material-symbols-rounded favorite"><a href="#">favorite</a></div>
@@ -326,7 +329,7 @@
 
           <div class="film-window">
             <h1 class="h1-in-the-film">Title</h1>
-            <img src="images/yellow-asia.jpeg" alt="A girl and the yellow background" class="film__carousel__general">
+            <div class="film__carousel__general all-pic-carousel" id="pic-carousel__yellow-asia"></div>
             <section class="icons-in-the-film">
               <div class="material-symbols-rounded delete"><a href="#">delete</a></div>
               <div class="material-symbols-rounded favorite"><a href="#">favorite</a></div>
@@ -336,7 +339,7 @@
 
           <div class="film-window">
             <h1 class="h1-in-the-film">Title</h1>
-            <img src="images/after-hours.jpeg" alt="After hours" class="film__carousel__general">
+            <div class="film__carousel__general all-pic-carousel" id="pic-carousel__after-hours"></div>
             <section class="icons-in-the-film">
               <div class="material-symbols-rounded delete"><a href="#">delete</a></div>
               <div class="material-symbols-rounded favorite"><a href="#">favorite</a></div>
@@ -346,7 +349,7 @@
 
           <div class="film-window">
             <h1 class="h1-in-the-film">Title</h1>
-            <img src="images/home-alone.jpeg" alt="Home alone" class="film__carousel__general">
+            <div class="film__carousel__general all-pic-carousel" id="pic-carousel__home-alone"></div>
             <section class="icons-in-the-film">
               <div class="material-symbols-rounded delete"><a href="#">delete</a></div>
               <div class="material-symbols-rounded favorite"><a href="#">favorite</a></div>
@@ -356,7 +359,7 @@
 
            <div class="film-window">
             <h1 class="h1-in-the-film">Title</h1>
-            <img src="images/funfair.jpeg" alt="Funfair" class="film__carousel__general">
+            <div class="film__carousel__general all-pic-carousel" id="pic-carousel__funfair"></div>
             <section class="icons-in-the-film">
               <div class="material-symbols-rounded delete"><a href="#">delete</a></div>
               <div class="material-symbols-rounded favorite"><a href="#">favorite</a></div>
@@ -372,7 +375,7 @@
 
           <div class="film-window">
             <h1 class="h1-in-the-film">Title</h1>
-            <img src="images/japan-street.jpeg" alt="Japanese shop" class="film__carousel__general">
+            <div class="film__carousel__general all-pic-carousel" id="pic-carousel__japan-street"></div>
             <section class="icons-in-the-film">
               <div class="material-symbols-rounded delete"><a href="#">delete</a></div>
               <div class="material-symbols-rounded favorite"><a href="#">favorite</a></div>
@@ -382,7 +385,7 @@
 
           <div class="film-window">
             <h1 class="h1-in-the-film">Title</h1>
-            <img src="images/3.jpeg" alt="3" class="film__carousel__general" >
+            <div class="film__carousel__general all-pic-carousel" id="pic-carousel__3"></div>
             <section class="icons-in-the-film">
               <div class="material-symbols-rounded delete"><a href="#">delete</a></div>
               <div class="material-symbols-rounded favorite"><a href="#">favorite</a></div>
@@ -392,7 +395,7 @@
          
           <div class="film-window">
             <h1 class="h1-in-the-film">Title</h1>
-            <img src="images/pink.jpeg" alt="Pink" class="film__carousel__general">
+            <div class="film__carousel__general all-pic-carousel" id="pic-carousel__pink"></div>
             <section class="icons-in-the-film">
               <div class="material-symbols-rounded delete"><a href="#">delete</a></div>
               <div class="material-symbols-rounded favorite"><a href="#">favorite</a></div>
@@ -402,7 +405,7 @@
 
           <div class="film-window">
             <h1 class="h1-in-the-film">Title</h1>
-            <img src="images/geisha.jpeg" alt="Geisha" class="film__carousel__general">
+            <div class="film__carousel__general all-pic-carousel" id="pic-carousel__geisha"></div>
             <section class="icons-in-the-film">
               <div class="material-symbols-rounded delete"><a href="#">delete</a></div>
               <div class="material-symbols-rounded favorite"><a href="#">favorite</a></div>
@@ -412,7 +415,7 @@
 
           <div class="film-window">
             <h1 class="h1-in-the-film">Title</h1>
-            <img src="images/yellow-asia.jpeg" alt="A girl and the yellow background" class="film__carousel__general">
+            <div class="film__carousel__general all-pic-carousel" id="pic-carousel__yellow-asia"></div>
             <section class="icons-in-the-film">
               <div class="material-symbols-rounded delete"><a href="#">delete</a></div>
               <div class="material-symbols-rounded favorite"><a href="#">favorite</a></div>
@@ -422,7 +425,7 @@
 
           <div class="film-window">
             <h1 class="h1-in-the-film">Title</h1>
-            <img src="images/window-depression.jpeg" alt="Depression" class="film__carousel__general">
+            <div class="film__carousel__general all-pic-carousel" id="pic-carousel__window-depression"></div>
             <section class="icons-in-the-film">
               <div class="material-symbols-rounded delete"><a href="#">delete</a></div>
               <div class="material-symbols-rounded favorite"><a href="#">favorite</a></div>
@@ -432,7 +435,7 @@
 
           <div class="film-window">
             <h1 class="h1-in-the-film">Title</h1>
-            <img src="images/window-night.jpeg" alt="Window by night" class="film__carousel__general">
+            <div class="film__carousel__general all-pic-carousel" id="pic-carousel__window-night"></div>
             <section class="icons-in-the-film">
               <div class="material-symbols-rounded delete"><a href="#">delete</a></div>
               <div class="material-symbols-rounded favorite"><a href="#">favorite</a></div>
@@ -442,7 +445,7 @@
 
           <div class="film-window">
             <h1 class="h1-in-the-film">Title</h1>
-            <img src="images/by-the-sea.jpeg" alt="By the sea" class="film__carousel__general">
+            <div class="film__carousel__general all-pic-carousel" id="pic-carousel__by-the-sea"></div>
             <section class="icons-in-the-film">
               <div class="material-symbols-rounded delete"><a href="#">delete</a></div>
               <div class="material-symbols-rounded favorite"><a href="#">favorite</a></div>
