@@ -1,4 +1,10 @@
 
+/*
+sources to how to use variables: 
+https://www.w3schools.com/css/css3_variables.asp
+https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties
+*/
+
 :root{
     --grad1: 180deg, rgba(13, 13, 13, 0) 80%, #0D0D0D 100%;
     --grad2: 180deg, #000000, rgba(13, 13, 13, 0) 30%;
