@@ -3,6 +3,24 @@
   box-sizing: border-box;
 }
 
+.backdrop__landing-site {
+  position: fixed;
+  z-index: 999;
+  bottom: 0;
+  left: 0;
+  background-image: linear-gradient(
+  0deg, #020202, rgba(0, 0, 0, 0) 30%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+
+
 html, body {
   min-height: 100%;
 }
@@ -293,6 +311,15 @@ padding: 0 20px;
 
 .cta__sign-in-or-register:hover {
   border: solid #d9d9d9 2px;
+}
+
+
+/*VIKTIG*/
+
+.get-started {
+  position: absolute;
+  bottom: 50px;
+
 }
 
 .cta__go-back {
