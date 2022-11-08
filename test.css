@@ -50,11 +50,18 @@
     flex-direction: column;   figure out if cta should be inside flex or not*/ 
   }
   
+
+  /* source:
+https://developer.mozilla.org/en-US/docs/Web/CSS/::-webkit-scrollbar
+https://www.w3schools.com/howto/howto_css_custom_scrollbar.asp */
   .main-style__carousel {
     display: flex;
+    overflow: scroll;
   }
   
-  
+  .main-style__carousel::-webkit-scrollbar {
+    display: none;
+} 
   
   /*font size note: ARE THEY TOO BIG? 
   medium = 16px = body
@@ -276,8 +283,7 @@
     border-radius: 0% 0% 48px 0%;
     width: 72.7vw;
     height: 73.6vh;
-    margin-left: 70px;
-    margin-right: 70px;
+    margin: auto;
   }
   
   
@@ -315,7 +321,7 @@
   }
   
   
-  /*VIKTIG*/
+  /*cta button landing-site*/
   
   .get-started {
     position: absolute;
