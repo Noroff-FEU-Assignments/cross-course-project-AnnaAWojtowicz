@@ -20,7 +20,6 @@
 }
 
 
-
 html, body {
   min-height: 100%;
 }
@@ -30,7 +29,7 @@ body {
   color: #ffffff;
   background: #0d0d0d;
   margin: 0;
-  font-size: medium;
+  font-size: 1rem;
 }
 
 a {
@@ -44,9 +43,9 @@ a {
 
 .main-style {
   /* % let the margin adjust to the portview*/
-  margin-left: 70px;
-  margin-right: 70px;
-  margin-top: 70px;
+  margin-left: 4.375rem;
+  margin-right: 4.375rem;
+  margin-top: 4.375rem;
   /*display: flex;
   flex-direction: column;   figure out if cta should be inside flex or not*/ 
 }
@@ -66,26 +65,26 @@ h3 = info about film = 80%
 */
 
 .todays-film__h1 {
-  font-size: 500%;
+  font-size: 5rem;
   font-weight: bold;
-  margin-top: 140px;
-  margin-bottom: 20px;
+  margin-top: 8.75rem;
+  margin-bottom: 1.25rem;
 }
 
 h1 {
-  font-size: 300%;
+  font-size: 3rem;
   font-weight: bold;
-  margin-top: 140px;
+  margin-top: 8.75rem;
 }
 
 h2 {
-  font-size: 200%;
+  font-size: 2rem;
   font-weight: bold;
-  margin: 16px 0;
+  margin: 1rem 0;
 }
 
 h3 {
-  font-size: 80%;
+  font-size: 0.8rem;
 }
 
 /* h3 {
@@ -230,11 +229,11 @@ h3 {
 
 
 .landing-site__main-style {
-  margin-top: 10px;
+  margin-top: 0.625rem;
 }
 
 .landing-site__main-style__sign-in-or-register {
-  margin-top: 100px;
+  margin-top: 6.25rem;
 }
 
 .landing-site__sign-in-or-register {
@@ -255,7 +254,7 @@ h3 {
 .landing-site__register, .landing-site__sign-in {
   display: inline-block;
 text-align: center;
-padding: 0 20px;
+padding: 0 1.25rem;
 
 }
 
@@ -322,36 +321,11 @@ padding: 0 20px;
 
 }
 
-.cta__go-back {
-}
-.cta__confirm {
-}
-.cta__check-now {
-}
-.cta__continue {
-}
-.cta__call-now {
-}
-.cta__chat-now {
-}
-.cta__read-now {
-}
-.cta__go-to-my-films {
-}
-
-.cta__trash {
-}
-.cta__info {
-}
-.cta__basket {
-}
-.cta__fav {
-}
 
 /*footer*/
 
 .footer__main-style {
-  margin: 150px auto 50px;
+  margin: 9.375rem auto 3.125rem;
    display: flex;
   align-items: flex-start;
 }
@@ -361,13 +335,13 @@ padding: 0 20px;
   display: inline-block;
   width: 30%;
   vertical-align: top;
-  line-height: 30px; 
+  line-height: 1,875rem; 
 }
 
 .footer__section-style-icons {
   list-style: none;
   width: 30%;
-  line-height: 30px;
+  line-height: 1,875rem;
   align-self: center;
 }
 
@@ -395,10 +369,10 @@ padding: 0 20px;
 }
 
 .fa-brands {
-  font-size: xx-large;
+  font-size: 2rem;
   width: 54px;
   height: 54px;
-  margin: 0 5px;
+  margin: 0 0.3125rem;
   color: #0d0d0d;
   background-color: #ffffff;
   text-align: center;
@@ -420,15 +394,15 @@ padding: 0 20px;
 /* shopping */
 
 .shopping-progress {
-  margin-top: 35px;
+  margin-top: 2.1875rem;
   display: inline-block;
   width: 100%;
   text-align: center;
-  font-size: 38px
+  font-size: 2.375rem
 }
 
 .h1-shopping {
-  margin-top: 35px;
+  margin-top: 2.1875rem;
 }
 
 .shopping-progress div {
