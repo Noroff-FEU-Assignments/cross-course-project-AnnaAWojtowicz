@@ -22,6 +22,7 @@
 
 html, body {
   min-height: 100%;
+  min-width: 400px;
 }
 
 body {
@@ -43,14 +44,20 @@ a {
 }*/
 
 .main-style {
-  /* % let the margin adjust to the portview*/
   height: 100%;
-  margin-left: 9.25vw;
-  margin-right: 9.25vw;
-  margin-top: 9.25vh;
-  /*display: flex;
-  flex-direction: column;   figure out if cta should be inside flex or not*/ 
+  margin-left: 2.4rem;
+  margin-right: 2.4rem;
 }
+
+@media (max-width: 40rem) {
+  .main-style {
+    height: 100%;
+    margin-left: 1.2rem;
+    margin-right: 1.2rem;
+  }
+}
+
+
 
 .todays-film {
   height: 100%;
@@ -68,7 +75,8 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/::-webkit-scrollbar
 https://www.w3schools.com/howto/howto_css_custom_scrollbar.asp */
 .main-style__carousel-pic {
   display: flex;
-  overflow: scroll;
+  overflow-y: scroll;
+  height: 10rem;
 }
 
 .main-style__carousel-pic::-webkit-scrollbar {
@@ -77,22 +85,26 @@ https://www.w3schools.com/howto/howto_css_custom_scrollbar.asp */
 
 
 .todays-film__h1 {
-  font-size: 5rem;
+  font-size: 3rem;
   font-weight: bold;
   margin-bottom: 1.25rem;
 }
 
 @media (max-width: 40rem) {
   .todays-film__h1 {
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
+}
+
+.todays-film__logged-in {
+  margin-top: 7rem;
 }
 
 
 h1 {
-  font-size: 3rem;
+  /* font-size: 3rem;
   font-weight: bold;
-  margin-top: 8.75rem;
+  margin-top: 8.75rem; */
 }
 
 
@@ -152,14 +164,18 @@ h3 {
   border-radius: 0% 0% 32px 0%;
   border-top: none;
   width: 100%; 
+  min-width: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .main-header__logo {
-  width: 16%;
+  /* width: 16%; */
   max-width: 120px;
   height: auto;
   padding: 0.5rem;
-  display: inline-block;
+ display: inline-block;
   vertical-align: middle;
 }
 
@@ -177,7 +193,6 @@ h3 {
 .nav__panel {
   display: inline-block;
   text-align: right;
-  /*width: calc(100% - 200px);*/
 }
 
 .nav__symbols-list {
@@ -197,7 +212,7 @@ h3 {
   color: #0d0d0d;
   text-align: center;
   font-size: 2.5rem;
-  margin: 0;
+  margin: 0 0.25rem;
   padding: 0.125rem;
   border-radius: 50%;
   border: solid #0d0d0d 1px;
@@ -228,7 +243,7 @@ h3 {
   height: 54px;
   width: 54px;
   padding: 0px;
-  margin: 0px;
+  margin: 0 0.5rem;
   display: inline-block;
   vertical-align: middle;
 }
@@ -242,6 +257,10 @@ h3 {
   display: inline-block;
   vertical-align: middle;
 }
+
+
+
+
 
 /*footer-sites*/
 .sign-in-or-reg-sites__background-pic-link {
@@ -358,10 +377,9 @@ padding: 0 1.25rem;
 .film__carousel__general {
   border: solid #d9d9d9 1px;
   border-radius: 0% 0% 24px 0%;
-  width: 23vw;
-  height: 28.5vh;
-  min-width: 78px;
-  min-height: 67px;
+  width: 16rem;
+  height: 100%;
+  
 }
 
 
@@ -370,17 +388,18 @@ padding: 0 1.25rem;
 .todays-film__img {
   border: solid #d9d9d9 1px;
   border-radius: 0% 0% 48px 0%;
-  width: 72.7vw;
-  height: 40rem;
-  min-height: 20rem;
+  width: 88%;
+  height: 60vmin;
+  min-height: 30rem;
   margin: auto;
 }
 
 @media (max-width: 40rem) {
   .todays-film__img {
     border-radius: 0% 0% 32px 0%;
-    width: 72.7vw;
-    height: 28.6vh;
+    width: 100%;
+    height: 60vmin;
+    min-height: 26vmax;
   }
 }
 
@@ -407,6 +426,19 @@ padding: 0 1.25rem;
   margin: -1px; /* Forebygger at ting ikke beveger seg da border blir tjukkere */
   text-shadow: .25px 0px .5px, -.25px 0px .5px;
 }
+
+.two-buttons {
+  position: absolute;
+  bottom: 2rem;
+  display: flex;
+  width: 100%;
+justify-content: space-between;
+}
+
+
+
+
+
 
 .cta__sign-in-or-register {
   width: 8rem;
@@ -510,17 +542,12 @@ padding: 0 1.25rem;
   font-size: 2.375rem
 }
 
-@media (min-width: 27rem) {
-  
-}
+
 
 .h1-shopping {
   margin-top: 2.1875rem;
 }
 
-@media (min-width: 27rem) {
-  
-} 
 
 .shopping-progress div {
   display: inline-block;
@@ -537,18 +564,14 @@ padding: 0 1.25rem;
   vertical-align: middle;
 }
 
-@media (min-width: 27rem) {
-  
-}
+
 
 .shopping-progress__hyphen {
   height: 3.375rem;
   width: 1.875rem;
 }
 
-@media (min-width: 27rem) {
-  
-}
+
 
 .shopping-progress .your-basket,
 .shopping-progress .payment {
@@ -571,16 +594,16 @@ padding: 0 1.25rem;
   height: 286px; 
 }
 
-@media (min-width: 27rem) {
-  
-}
+
 
 .film-window {
   position: relative;
+  margin-right: 0.25rem;
 }
 
 .h1-in-the-film {
   position: absolute;
+  font-size: 1.5rem;
   margin: 0;
   top: 10px;
   left: 15px;
@@ -609,9 +632,7 @@ padding: 0 1.25rem;
   cursor: pointer;
   }
 
-  @media (min-width: 27rem) {
   
-  }
 
 /* .material-symbols-rounded a {
   display: inline-block;
@@ -640,9 +661,7 @@ border-radius: 0 0 24px 0;
 border: solid #ffffff 1px;
 }
 
-@media (min-width: 27rem) {
-  
-}
+
 
 .cta__avatar-account {
 position: absolute;
@@ -655,6 +674,3 @@ top: 300px;
 left: 35px;
 }
 
-@media (min-width: 27rem) {
-  
-}
