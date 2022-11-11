@@ -32,10 +32,6 @@
     font-size: 1rem;
   }
   
-  /* min-width based on apple12 pro max-size: https://www.mydevice.io/ */
-@media (min-width: 27rem) {
-
-}
 
 
   a {
@@ -56,18 +52,12 @@
     flex-direction: column;   figure out if cta should be inside flex or not*/ 
   }
   
-  @media (min-width: 27rem) {
-    
-}
 
 
 .main-style__carousel {
     margin-top: 4rem;
 }
 
-@media (min-width: 27rem) {
-    
-}
 
 
   /* source:
@@ -97,9 +87,7 @@ https://www.w3schools.com/howto/howto_css_custom_scrollbar.asp */
     margin-bottom: 1.25rem;
   }
   
-  @media (min-width: 27rem) {
-    
-}
+
 
   h1 {
     font-size: 3rem;
@@ -107,9 +95,7 @@ https://www.w3schools.com/howto/howto_css_custom_scrollbar.asp */
     margin-top: 8.75rem;
   }
   
-  @media (min-width: 27rem) {
-    
-}
+
 
   h2 {
     font-size: 2rem;
@@ -117,17 +103,13 @@ https://www.w3schools.com/howto/howto_css_custom_scrollbar.asp */
     margin: 1rem 0;
   }
   
-  @media (min-width: 27rem) {
-    
-}
+
 
   h3 {
     font-size: 0.8rem;
   }
   
-  @media (min-width: 27rem) {
-    
-}
+
 
   /* h3 {
       font-family: acumin-pro, sans-serif;
@@ -275,26 +257,20 @@ https://www.w3schools.com/howto/howto_css_custom_scrollbar.asp */
     margin-top: 0.625rem;
   }
   
-  @media (min-width: 27rem) {
-    
-}
+
 
   .landing-site__main-style__sign-in-or-register {
     margin-top: 6.25rem;
   }
   
-  @media (min-width: 27rem) {
-    
-}
+
 
   .landing-site__sign-in-or-register {
     display: block;
     text-align: center;
   }
 
-  @media (min-width: 27rem) {
-    
-}
+
 
   .avatar-and-fill-in {
     width: 100%;
@@ -325,9 +301,7 @@ https://www.w3schools.com/howto/howto_css_custom_scrollbar.asp */
     min-height: 67px;
   }
   
-  @media (min-width: 27rem) {
-    
-}
+
 
   /*this one needs to stay here to be able to override (.film__carousel__general) when it comes to border radious and size*/
   .todays-film__img {
@@ -338,9 +312,7 @@ https://www.w3schools.com/howto/howto_css_custom_scrollbar.asp */
     margin: auto;
   }
   
-  @media (min-width: 27rem) {
-    
-}
+
   
   /* cta */
   .cta {
@@ -353,9 +325,7 @@ https://www.w3schools.com/howto/howto_css_custom_scrollbar.asp */
     cursor: pointer;
   }
   
-  @media (min-width: 27rem) {
-    
-}
+
 
   .cta a {
     color: #d9d9d9;
@@ -374,9 +344,7 @@ https://www.w3schools.com/howto/howto_css_custom_scrollbar.asp */
     border: solid #d9d9d9 1px;
   }
   
-  @media (min-width: 27rem) {
-    
-}
+
 
   .cta__sign-in-or-register:hover {
     border: solid #d9d9d9 2px;
@@ -471,17 +439,13 @@ https://www.w3schools.com/howto/howto_css_custom_scrollbar.asp */
     font-size: 2.375rem
   }
   
-  @media (min-width: 27rem) {
-    
-}
+
 
   .h1-shopping {
     margin-top: 2.1875rem;
   }
  
-  @media (min-width: 27rem) {
-    
-} 
+
 
   .shopping-progress div {
     display: inline-block;
@@ -498,18 +462,13 @@ https://www.w3schools.com/howto/howto_css_custom_scrollbar.asp */
     vertical-align: middle;
   }
   
-  @media (min-width: 27rem) {
-    
-}
 
   .shopping-progress__hyphen {
     height: 3.375rem;
     width: 1.875rem;
   }
   
-  @media (min-width: 27rem) {
-    
-}
+
 
   .shopping-progress .your-basket,
   .shopping-progress .payment {
@@ -532,9 +491,7 @@ https://www.w3schools.com/howto/howto_css_custom_scrollbar.asp */
     height: 286px; 
   }
   
-  @media (min-width: 27rem) {
-    
-}
+
 
   .film-window {
     position: relative;
@@ -570,9 +527,7 @@ https://www.w3schools.com/howto/howto_css_custom_scrollbar.asp */
     cursor: pointer;
     }
   
-    @media (min-width: 27rem) {
-    
-    }
+  
 
   /* .material-symbols-rounded a {
     display: inline-block;
@@ -601,9 +556,7 @@ https://www.w3schools.com/howto/howto_css_custom_scrollbar.asp */
   border: solid #ffffff 1px;
   }
   
-  @media (min-width: 27rem) {
-    
-}
+
 
   .cta__avatar-account {
   position: absolute;
@@ -616,6 +569,3 @@ https://www.w3schools.com/howto/howto_css_custom_scrollbar.asp */
   left: 35px;
   }
 
-  @media (min-width: 27rem) {
-    
-}
