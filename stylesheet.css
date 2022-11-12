@@ -534,7 +534,91 @@ justify-content: space-between;
 
 /* shopping */
 
+.shopping__container {
+  display: grid;
+  grid-template-rows: 15% 15% 1fr 10% 10%;
+  /* grid-template-rows: 54px 100px 1fr 52px 38px; */
+  grid-template-columns: 30% 30% 30%;
+}
+
+.shopping__films {
+  grid-column-start: 1;
+  grid-column-end: 4;
+grid-row-start: 3;
+}
+
+
+.shopping__film-price-icons {
+  grid-column-start: 1;
+  grid-column-end: 4;
+grid-row-start: 3;
+
+
+
+}
+
+
+.shopping__title {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  /*display: inline-grid;
+  max-width: 33%;*/
+}
+
+.shopping__film-window {
+  grid-column-start: 1;
+  grid-row-start: 3;
+  max-width: 33%;
+    display: inline-grid;
+}
+
+
+.shopping__film-pic {
+  border: solid #d9d9d9 1px;
+  border-radius: 0% 0% 24px 0%;
+  max-width: 100%;
+  height: auto;
+}
+
+.shopping__price {
+  grid-column-start: 2;
+  grid-row-start: 3;
+  max-width: 33%;
+    display: inline-grid;
+  
+}
+
+.shopping__icons {
+  grid-column-start: 3;
+  grid-row-start: 3;
+  max-width: 33%;
+  display: inline-grid;
+
+}
+
+.shopping__total {
+  grid-column-start: 1;
+  grid-column-end: 4;
+grid-row-start: 4;
+}
+
+.shopping__two-buttons {
+  grid-column-start: 1;
+  grid-column-end: 3;
+grid-row-start: 5;
+  position: absolute;
+  bottom: 2rem;
+  display: flex;
+  width: 100%;
+justify-content: space-between;
+}
+
+
 .shopping-progress {
+  grid-column-start: 1;
+  grid-column-end: 4;
+grid-row-start: 1;
   margin-top: 2.1875rem;
   display: inline-block;
   width: 100%;
@@ -542,9 +626,10 @@ justify-content: space-between;
   font-size: 2.375rem
 }
 
-
-
 .h1-shopping {
+  grid-column-start: 1;
+  grid-column-end: 4;
+grid-row-start: 2;
   margin-top: 2.1875rem;
 }
 
@@ -572,7 +657,6 @@ justify-content: space-between;
 }
 
 
-
 .shopping-progress .your-basket,
 .shopping-progress .payment {
   color: #8F8F8F;
@@ -582,6 +666,45 @@ justify-content: space-between;
 .shopping-progress .your-basket__hyphen {
   color: #8F8F8F;
 }
+
+
+/* my films */
+
+
+.pic-film-info-and-cta {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.main-style__pic-my-films {
+  border: solid #d9d9d9 1px;
+  border-radius: 0% 0% 24px 0%;
+  width: 100%;
+  height: auto;
+  }
+
+.film-info-and-cta {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  justify-content: space-between;
+}
+
+.film-info-and-cta .cta {
+ 
+  align-self: center;
+}
+
+.film-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.country-year-min {
+  display: flex;
+  justify-content: space-between;
+}
+
 
 
 /* film window */
