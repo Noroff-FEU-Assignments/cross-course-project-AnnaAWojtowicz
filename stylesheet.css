@@ -557,9 +557,13 @@ input::-webkit-inner-spin-button {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
 }
 
+
+.shopping__film-window {
+  max-width: 200px;
+}
 
 
 .shopping__film-pic {
@@ -625,6 +629,11 @@ input::-webkit-inner-spin-button {
 
 .shopping-progress .your-basket__hyphen {
   color: #8F8F8F;
+}
+
+.shopping__total {
+  width: 100px;
+  margin: auto;
 }
 
 
