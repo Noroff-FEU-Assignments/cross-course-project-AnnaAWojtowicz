@@ -3,9 +3,10 @@
 
 <head>
   <meta charset="UTF-8" />
+  <meta name="description" content="Your basket">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SquareEyes</title>
+  <title>Your basket</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet" />
@@ -17,8 +18,8 @@
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
   <!--google icons-->
-  <script src="https://kit.fontawesome.com/c1f5e20bb4.js" crossorigin="anonymous"></script>
-  <!-- from font awsome-->
+  <script src="https://kit.fontawesome.com/c1f5e20bb4.js" crossorigin="anonymous"></script> <!-- from font awsome-->
+  <link href="../hamburger.css" rel="stylesheet" />
   <link href="../carousel.css" rel="stylesheet" />
   <link href="../stylesheet.css" rel="stylesheet" />
 </head>
@@ -26,30 +27,54 @@
 <body class="shop-sites__background-pic-link">
 
   <header class="main-header">
-    <a href="../index2.html">
-      <img src="../images/SquareEyes_Logo.png" alt="Logo of Square Eyes" class="main-header__logo" />
-    </a>
-    <nav class="nav__panel">
-      <ul class="nav__symbols-list">
+    <div class="logo-home-search">
+      <a href="../index2.html">
+        <img src="../images/SquareEyes_Logo.png" alt="Logo of Square Eyes" class="main-header__logo" />
+      </a>
+
+      <ul class="nav__symbols-list nav__symbol-toggle-off">
         <li class="material-symbols-outlined">
-          <a href="../index2.html"> Home</a>
+          <a href="../index2.html">Home</a>
         </li>
         <li class="material-symbols-outlined">
-          <a href="#"> Search </a>
-        </li>
-        <li class="material-symbols-outlined">
-          <a href="../shop/shop_your-basket.html"> Shopping_Basket </a>
-        </li>
-        <li class="material-symbols-outlined__avatar">
-          <a href="account/account.html">
-            <img src="../images/sign-in.jpeg" alt="avatar__2" class="cta__avatar" /></a>
+          <a href="#">Search</a>
         </li>
       </ul>
 
-    </nav>
+    </div>
+    <div class="basket-avatar">
+      <!-- Desktop version -->
+      <ul class="nav__symbols-list nav__symbol-toggle-off">
+        <li class="material-symbols-outlined">
+          <a href="../shop/shop_your-basket.html">Shopping_Basket</a>
+        </li>
+        <li class="material-symbols-outlined__avatar">
+          <a href="../account/account.html">
+            <img src=" ../images/sign-in-cropped.jpg" alt="avatar__2" class="cta__avatar" /></a>
+        </li>
+      </ul>
+      <!-- Mobile version -->
+      <div class="hamburger-menu">
+        <input class="hamburger-checkbox__open" type="checkbox" name="" id="" />
+        <ul class="hamburger-menu-items">
+          <li><a href="#">what's new</a></li>
+          <li><a href="#">library</a></li>
+          <li><a href="#">my profile</a></li>
+          <li><a href="index.html">logout</a></li>
+        </ul>
+      </div>
+      <ul class="nav__symbols-list nav__symbol-toggle-on">
+        <li class="material-symbols-outlined">
+          <a href="shop/shop_your-basket.html">Shopping_Basket</a>
+        </li>
+        <li class="material-symbols-outlined">
+          <a href="#">Menu</a>
+        </li>
+      </ul>
+    </div>
   </header>
 
-  <main class="main-style">
+  <main class="main-style main-style__fullsize-background">
     <section class="shopping-progress">
       <div class="shopping-progress__number">1</div>
       <div class="shopping-progress__hyphen">-</div>

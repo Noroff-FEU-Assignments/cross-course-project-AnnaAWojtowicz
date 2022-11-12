@@ -1,71 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SquareEyes</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <!--Montserrat fra GoogleFonts-->
-    <link rel="stylesheet" href="https://use.typekit.net/vco2zuo.css" />
-    <!--Acumin fra AdobeFonts-->
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
-    />
-    <!--google icons-->
-    <link href="../stylesheet.css" rel="stylesheet" />
-  </head>
-  <body class="footer-sites__background-pic-link">
-    <header class="main-header">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="description" content="Corporate information">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Corporate information</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet" />
+  <!--Montserrat fra GoogleFonts-->
+  <link rel="stylesheet" href="https://use.typekit.net/vco2zuo.css" />
+  <!--Acumin fra AdobeFonts-->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <!--google icons-->
+  <script src="https://kit.fontawesome.com/c1f5e20bb4.js" crossorigin="anonymous"></script> <!-- from font awsome-->
+  <link href="../hamburger.css" rel="stylesheet" />
+  <link href="../carousel.css" rel="stylesheet" />
+  <link href="../stylesheet.css" rel="stylesheet" />
+</head>
+
+<body class="footer-sites__background-pic-link">
+  <header class="main-header">
+    <div class="logo-home-search">
       <a href="../index2.html">
         <img src="../images/SquareEyes_Logo.png" alt="Logo of Square Eyes" class="main-header__logo" />
       </a>
-      <nav class="nav__panel">
-        <ul class="nav__symbols-list">
-          <li class="material-symbols-outlined">
-            <a href="../index2.html">
-            Home</a>
-          </li>
-          <li class="material-symbols-outlined">
-            <a href="#">
-            Search
-            </a>
-          </li>
-          <li class="material-symbols-outlined"><a href="../shop/shop_your-basket.html">
-            Shopping_Basket </a>
-          </li>
-           <li class="material-symbols-outlined__avatar">
-            <a href="account/account.html"> 
-            <img src="../images/sign-in.jpeg" alt="avatar__2" class="cta__avatar" /></a> 
-          </li>
+
+      <ul class="nav__symbols-list nav__symbol-toggle-off">
+        <li class="material-symbols-outlined">
+          <a href="../index2.html">Home</a>
+        </li>
+        <li class="material-symbols-outlined">
+          <a href="#">Search</a>
+        </li>
+      </ul>
+
+    </div>
+    <div class="basket-avatar">
+      <!-- Desktop version -->
+      <ul class="nav__symbols-list nav__symbol-toggle-off">
+        <li class="material-symbols-outlined">
+          <a href="../shop/shop_your-basket.html">Shopping_Basket</a>
+        </li>
+        <li class="material-symbols-outlined__avatar">
+          <a href="../account/account.html">
+            <img src="../images/sign-in-cropped.jpg" alt="avatar__2" class="cta__avatar" /></a>
+        </li>
+      </ul>
+      <!-- Mobile version -->
+      <div class="hamburger-menu">
+        <input class="hamburger-checkbox__open" type="checkbox" name="" id="" />
+        <ul class="hamburger-menu-items">
+          <li><a href="#">what's new</a></li>
+          <li><a href="#">library</a></li>
+          <li><a href="#">my profile</a></li>
+          <li><a href="index.html">logout</a></li>
         </ul>
-        <!--this will show only after logging in-->
-        <!--mobile: basket and hamburegr menu icons-->
-        <!--desktop: house, magnifying glass, basket, avatar icon-->
-      </nav>
-    </header>
-    <main class="main-style">
-      <section>
-        <h1>Corporate information</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
-          laudantium rem, odit fuga totam sint officia sed enim ratione suscipit
-          eos id earum aut eligendi, laborum itaque, nobis quisquam deleniti!
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
-          eligendi repellendus placeat cupiditate modi? Libero odit dignissimos,
-          suscipit, quas dolores aut totam sequi quaerat architecto
-          exercitationem esse, possimus nulla voluptatibus.
-        </p>
-      </section>
-      <div class="cta">
-        <a href="../index2.html">go back</a>
       </div>
-    </main>
-  </body>
+      <ul class="nav__symbols-list nav__symbol-toggle-on">
+        <li class="material-symbols-outlined">
+          <a href="shop/shop_your-basket.html">Shopping_Basket</a>
+        </li>
+        <li class="material-symbols-outlined">
+          <a href="#">Menu</a>
+        </li>
+      </ul>
+    </div>
+  </header>
+  <main class="main-style">
+    <section>
+      <h1>Corporate information</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
+        laudantium rem, odit fuga totam sint officia sed enim ratione suscipit
+        eos id earum aut eligendi, laborum itaque, nobis quisquam deleniti!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
+        eligendi repellendus placeat cupiditate modi? Libero odit dignissimos,
+        suscipit, quas dolores aut totam sequi quaerat architecto
+        exercitationem esse, possimus nulla voluptatibus.
+      </p>
+    </section>
+    <div class="cta">
+      <a href="../index2.html">go back</a>
+    </div>
+  </main>
+</body>
+
 </html>
