@@ -349,7 +349,7 @@ h3 {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  height: 100%;
+  /* height: 100%; */
 }
 
 
@@ -635,14 +635,20 @@ input::-webkit-inner-spin-button {
 }
 
 
-
+.shopping__one-button {
+  position: absolute;
+  bottom: 2rem;
+  right: 3rem;
+}
 
 .shopping__two-buttons {
   position: absolute;
   bottom: 2rem;
+  left: 0;
   display: flex;
   width: 100%;
   justify-content: space-between;
+  padding: 0 3rem;
 }
 
 
