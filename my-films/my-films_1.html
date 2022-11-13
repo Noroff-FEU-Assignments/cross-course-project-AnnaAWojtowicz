@@ -27,26 +27,24 @@
 
 <body>
   <header class="main-header">
-
     <div class="logo-home-search">
       <a href="../index2.html">
         <img src="../images/SquareEyes_Logo.png" alt="Logo of Square Eyes" class="main-header__logo" />
       </a>
 
-      <nav class="nav__panel">
+      <ul class="nav__symbols-list nav__symbol-toggle-off">
+        <li class="material-symbols-outlined">
+          <a href="../index2.html">Home</a>
+        </li>
+        <li class="material-symbols-outlined">
+          <a href="#">Search</a>
+        </li>
+      </ul>
 
-        <ul class="nav__symbols-list">
-          <li class="material-symbols-outlined">
-            <a href="index.html">Home</a>
-          </li>
-          <li class="material-symbols-outlined">
-            <a href="#">Search</a>
-          </li>
-        </ul>
     </div>
-
     <div class="basket-avatar">
-      <ul class="nav__symbols-list">
+      <!-- Desktop version -->
+      <ul class="nav__symbols-list nav__symbol-toggle-off">
         <li class="material-symbols-outlined">
           <a href="../shop/shop_your-basket.html">Shopping_Basket</a>
         </li>
@@ -54,48 +52,69 @@
           <a href="../account/account.html">
             <img src="../images/sign-in-cropped.jpg" alt="avatar__2" class="cta__avatar" /></a>
         </li>
-
+      </ul>
+      <!-- Mobile version -->
+      <div class="hamburger-menu">
+        <input class="hamburger-checkbox__open" type="checkbox" name="" id="" />
+        <ul class="hamburger-menu-items">
+          <li><a href="#">what's new</a></li>
+          <li><a href="#">library</a></li>
+          <li><a href="#">my profile</a></li>
+          <li><a href="index.html">logout</a></li>
+        </ul>
+      </div>
+      <ul class="nav__symbols-list nav__symbol-toggle-on">
+        <li class="material-symbols-outlined">
+          <a href="shop/shop_your-basket.html">Shopping_Basket</a>
+        </li>
+        <li class="material-symbols-outlined">
+          <a href="#">Menu</a>
+        </li>
       </ul>
     </div>
-
-    </nav>
   </header>
   <main class="main-style">
-    <section class="my-films__container">
-      <h1 class="title__my-films">Title</h1>
-      <div class="pic-film-info-and-cta">
-        <div>
-          <div class="film-window">
-            <img src="../images/3.jpeg" alt="3" class="main-style__pic-my-films" />
-            <section class="icons-in-the-film">
 
-              <div class="material-symbols-rounded info"><a href="#">shopping_basket</a></div>
-              <div class="material-symbols-rounded favorite"><a href="#">favorite</a></div>
+    <div class="title-pic-film-info-and-cta">
+      <div class="title-pic">
+        <h1 class="title__my-films">Title</h1>
 
-            </section>
-          </div>
-        </div>
-        <div class="film-info-and-cta">
-          <div class="film-info">
-            <h3>genre</h3>
-            <h3>dirsected by: L.Ipsum</h3>
-            <div class="country-year-min">
-              <h3>Country, Year</h3>
-              <h3>000min.</h3>
-            </div>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia iure
-              totam vitae minus odio explicabo et ratione pariatur distinctio dicta
-              neque qui recusandae, facilis rerum maiores reiciendis, est nesciunt
-              sit.
-            </p>
-          </div>
-          <div class="cta">
-            <a href="../index2.html">go back</a>
-          </div>
+
+        <div class="film-window">
+          <img src="../images/3.jpeg" alt="3" class="main-style__pic-my-films" />
+          <section class="icons-in-the-film">
+
+            <div class="material-symbols-rounded info"><a href="#">shopping_basket</a></div>
+            <div class="material-symbols-rounded favorite"><a href="#">favorite</a></div>
+
+          </section>
         </div>
       </div>
-    </section>
+
+
+
+
+      <div class="film-info-and-cta">
+        <div class="film-info">
+          <h3>genre</h3>
+          <h3>dirsected by: L.Ipsum</h3>
+          <div class="country-year-min">
+            <h3>Country, Year</h3>
+            <h3>000min.</h3>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia iure
+            totam vitae minus odio explicabo et ratione pariatur distinctio dicta
+            neque qui recusandae, facilis rerum maiores reiciendis, est nesciunt
+            sit.
+          </p>
+        </div>
+        <div class="cta">
+          <a href="../index2.html">go back</a>
+        </div>
+      </div>
+    </div>
+
   </main>
 </body>
 

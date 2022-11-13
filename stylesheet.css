@@ -706,10 +706,10 @@ input::-webkit-inner-spin-button {
 
 
 
-.pic-film-info-and-cta {
-  display: flex;
-  justify-content: space-evenly;
-}
+
+
+
+
 
 .main-style__pic-my-films {
   border: solid #d9d9d9 1px;
@@ -719,11 +719,21 @@ input::-webkit-inner-spin-button {
 }
 
 .film-info-and-cta {
+  padding-top: 5rem;
   padding-left: 0.5rem;
   display: flex;
   flex-direction: column;
   width: 50%;
   justify-content: space-between;
+}
+
+@media (max-width: 40rem) {
+  .film-info-and-cta {
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: space-evenly;
+  }
 }
 
 .film-info-and-cta .cta {
