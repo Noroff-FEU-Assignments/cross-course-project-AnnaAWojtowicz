@@ -1,6 +1,7 @@
 # sources:
 
 
+
 ## courses: 
 Academind by Maximilian Schwarzmüller, Schwarzmüller M., Lorenz M. (11.2022). CSS - The Complete Guide 2023 (incl. Flexbox, Grid & Sass) [video]. https://www.udemy.com/course/css-the-complete-guide-incl-flexbox-grid-sass/.
 
@@ -8,7 +9,6 @@ Noroff (s.a.). HTML and CSS. Noroff LMS. Retrieved 13.11.2022 from: https://noro
 
 
 ## websites:
-
 Alvaro (s.a.). Navbar. Codepen. Retrieved from: https://codepen.io/alvarotrigo/pen/wvrzPWL
 
 Diener, B., Noroff FEU, Philip, MJ., (2022, 14.03.). NoroffFEU first-year-cross-course-assignment-brief-two. Github.com. Retrieved 31.08.2022 from: https://github.com/NoroffFEU/first-year-cross-course-assignment-brief-two
@@ -29,7 +29,6 @@ W3schools (s.a.) CSS Variables - The var() Function. W3schools. Retrieved from: 
 
 
 ## fonts and symbols:
-
 Font Awsome (s.a.). Icons. Retrieved from: https://fontawesome.com/icons
 
 Google (s.a.). Material symbols. Retrieved from: https://fonts.google.com/icons
@@ -40,7 +39,6 @@ Ulanovsky, J., Matas, S., del Peral, J.P., Le Bailly, J. (s.a.). Montserrat. Goo
 
 
 ## logo and pictures:
-
 Noroff (2022). Course Assignment. Noroff Front-end Develpement. Retrieved 25.09.2022 from: https://noroff-content.gitlab.io/feu/design-1/ca.html
 
 Adesina, D. (2019). [No title]. Retrieved 09.09.2022 from: https://unsplash.com/photos/U386y9IEuww
