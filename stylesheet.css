@@ -156,7 +156,7 @@ h3 {
 
 
 /* nav */
-/*logo and padding in rem or %????*/
+
 .main-header {
   position: fixed;
   z-index: 999;
@@ -650,6 +650,18 @@ input::-webkit-inner-spin-button {
   justify-content: space-between;
   padding: 0 3rem;
 }
+
+.footer__one-button {
+  text-align: center;
+  padding-top: 5rem;
+}
+
+@media (max-width: 40rem) {
+  .footer__one-button {
+    padding-top: 12rem;
+  }
+}
+
 
 
 .shopping-progress {

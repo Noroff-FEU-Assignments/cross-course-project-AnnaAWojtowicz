@@ -1,0 +1,21 @@
+/* .footer__flex-coniatner {
+    display: flex;
+    flex-direction: column;
+} */
+
+
+.main-style {
+
+    margin: 10rem auto 0 auto;
+    max-width: 80%;
+}
+
+.footer__flex__child {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer__flex__child .cta {
+    align-self: flex-end;
+}
