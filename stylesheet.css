@@ -325,8 +325,8 @@ h3 {
 
 /*footer-sites*/
 .sign-in-or-reg-sites__background-pic-link {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4),
-      rgba(0, 0, 0, 0.4)), url("../images/by-the-sea.jpeg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.7)), url("../images/by-the-sea.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -334,8 +334,8 @@ h3 {
 }
 
 .footer-sites__background-pic-link {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4),
-      rgba(0, 0, 0, 0.4)), url("../images/film-projector.jpeg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.7)), url("../images/film-projector.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -496,9 +496,11 @@ input::-webkit-inner-spin-button {
   padding: inherit;
 }
 
-
-
-
+.cta__one-button-sign-in-or-register {
+  position: absolute;
+  bottom: 2rem;
+  left: 3rem;
+}
 
 
 .cta__sign-in-or-register {
