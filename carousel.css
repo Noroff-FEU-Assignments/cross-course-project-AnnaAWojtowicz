@@ -1,167 +1,167 @@
-
 /*
 sources to how to use variables: 
 https://www.w3schools.com/css/css3_variables.asp
 https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties
 */
 
-:root{
-    --grad1: 180deg, rgba(13, 13, 13, 0) 80%, #0D0D0D 100%;
-    --grad2: 180deg, #000000, rgba(13, 13, 13, 0) 30%;
-  }
-  
-  
- .all-pic-carousel{
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-  }
-  
+:root {
+  --grad1: 180deg, rgba(13, 13, 13, 0) 80%, #0D0D0D 100%;
+  --grad2: 180deg, #000000, rgba(13, 13, 13, 0) 30%;
+}
+
+
+.all-pic-carousel {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
 
 #pic-todays-film {
-    background-image: 
-    linear-gradient(var(--grad1)), 
-    linear-gradient(var(--grad2)), 
+  background-image:
+    linear-gradient(var(--grad1)),
+    linear-gradient(var(--grad2)),
     url("images/yellow-asia.jpeg");
 }
 
 
-  #pic-carousel__funfair{
-    background-image: 
-        linear-gradient(var(--grad1)), 
-        linear-gradient(var(--grad2)), 
-        url("images/funfair.jpeg");
-  }
+.pic-carousel__funfair {
+  background-image:
+    linear-gradient(var(--grad1)),
+    linear-gradient(var(--grad2)),
+    url("images/funfair.jpeg");
+}
 
-  #pic-carousel__3{
-    background-image: 
-        linear-gradient(var(--grad1)), 
-        linear-gradient(var(--grad2)), 
-        url("images/3.jpeg");
-  }
+.pic-carousel__3 {
+  background-image:
+    linear-gradient(var(--grad1)),
+    linear-gradient(var(--grad2)),
+    url("images/3.jpeg");
+}
 
-  #pic-carousel__home-alone{
-    background-image: 
-        linear-gradient(var(--grad1)), 
-        linear-gradient(var(--grad2)), 
-        url("images/home-alone.jpeg");
-  }
+.pic-carousel__home-alone {
+  background-image:
+    linear-gradient(var(--grad1)),
+    linear-gradient(var(--grad2)),
+    url("images/home-alone.jpeg");
+}
 
-  #pic-carousel__taking-photos{
-    background-image: 
-        linear-gradient(var(--grad1)), 
-        linear-gradient(var(--grad2)), 
-        url("images/taking-photos.jpeg");
-  }
+.pic-carousel__taking-photos {
+  background-image:
+    linear-gradient(var(--grad1)),
+    linear-gradient(var(--grad2)),
+    url("images/taking-photos.jpeg");
+}
 
-  #pic-carousel__on-the-road{
-    background-image: 
-        linear-gradient(var(--grad1)), 
-        linear-gradient(var(--grad2)), 
-        url("images/on-the-road.jpeg");
-  }
 
-  #pic-carousel__after-hours{
-    background-image: 
-        linear-gradient(var(--grad1)), 
-        linear-gradient(var(--grad2)), 
-        url("images/after-hours.jpeg");
-  }
+.pic-carousel__on-the-road {
+  background-image:
+    linear-gradient(var(--grad1)),
+    linear-gradient(var(--grad2)),
+    url("images/on-the-road.jpeg");
+}
 
-  #pic-carousel__in-the-water{
-    background-image: 
-        linear-gradient(var(--grad1)), 
-        linear-gradient(var(--grad2)), 
-        url("images/in-the-water.jpeg");
-  }
+.pic-carousel__after-hours {
+  background-image:
+    linear-gradient(var(--grad1)),
+    linear-gradient(var(--grad2)),
+    url("images/after-hours.jpeg");
+}
 
-  #pic-carousel__metro{
-    background-image: 
-        linear-gradient(var(--grad1)), 
-        linear-gradient(var(--grad2)), 
-        url("images/metro.jpeg");
-  }
+.pic-carousel__in-the-water {
+  background-image:
+    linear-gradient(var(--grad1)),
+    linear-gradient(var(--grad2)),
+    url("images/in-the-water.jpeg");
+}
 
-  #pic-carousel__window-night{
-    background-image: 
-        linear-gradient(var(--grad1)), 
-        linear-gradient(var(--grad2)), 
-        url("images/window-night.jpeg");
-  }
+.pic-carousel__metro {
+  background-image:
+    linear-gradient(var(--grad1)),
+    linear-gradient(var(--grad2)),
+    url("images/metro.jpeg");
+}
 
-  #pic-carousel__window-depression{
-    background-image: 
-        linear-gradient(var(--grad1)), 
-        linear-gradient(var(--grad2)), 
-        url("images/window-depression.jpeg");
-  }
+.pic-carousel__window-night {
+  background-image:
+    linear-gradient(var(--grad1)),
+    linear-gradient(var(--grad2)),
+    url("images/window-night.jpeg");
+}
 
-  #pic-carousel__ny-metro{
-    background-image: 
-        linear-gradient(var(--grad1)), 
-        linear-gradient(var(--grad2)), 
-        url("images/ny-metro.jpeg");
-  }
+.pic-carousel__window-depression {
+  background-image:
+    linear-gradient(var(--grad1)),
+    linear-gradient(var(--grad2)),
+    url("images/window-depression.jpeg");
+}
 
-  #pic-carousel__motel{
-    background-image: 
-        linear-gradient(var(--grad1)), 
-        linear-gradient(var(--grad2)), 
-        url("images/motel.jpeg");
-  }
+.pic-carousel__ny-metro {
+  background-image:
+    linear-gradient(var(--grad1)),
+    linear-gradient(var(--grad2)),
+    url("images/ny-metro.jpeg");
+}
 
-  #pic-carousel__pink{
-    background-image: 
-        linear-gradient(var(--grad1)), 
-        linear-gradient(var(--grad2)), 
-        url("images/pink.jpeg");
-  }
+.pic-carousel__motel {
+  background-image:
+    linear-gradient(var(--grad1)),
+    linear-gradient(var(--grad2)),
+    url("images/motel.jpeg");
+}
 
-  #pic-carousel__by-the-sea{
-    background-image: 
-        linear-gradient(var(--grad1)), 
-        linear-gradient(var(--grad2)), 
-        url("images/by-the-sea.jpeg");
-  }
+.pic-carousel__pink {
+  background-image:
+    linear-gradient(var(--grad1)),
+    linear-gradient(var(--grad2)),
+    url("images/pink.jpeg");
+}
 
-  #pic-carousel__young-mum{
-    background-image: 
-        linear-gradient(var(--grad1)), 
-        linear-gradient(var(--grad2)), 
-        url("images/young-mum.jpeg");
-  }
+.pic-carousel__by-the-sea {
+  background-image:
+    linear-gradient(var(--grad1)),
+    linear-gradient(var(--grad2)),
+    url("images/by-the-sea.jpeg");
+}
 
-  #pic-carousel__with-friends{
-    background-image: 
-        linear-gradient(var(--grad1)), 
-        linear-gradient(var(--grad2)), 
-        url("images/with-friends.jpeg");
-  }
+.pic-carousel__young-mum {
+  background-image:
+    linear-gradient(var(--grad1)),
+    linear-gradient(var(--grad2)),
+    url("images/young-mum.jpeg");
+}
 
-  #pic-carousel__geisha{
-    background-image: 
-        linear-gradient(var(--grad1)), 
-        linear-gradient(var(--grad2)), 
-        url("images/geisha.jpeg");
-  }
+.pic-carousel__with-friends {
+  background-image:
+    linear-gradient(var(--grad1)),
+    linear-gradient(var(--grad2)),
+    url("images/with-friends.jpeg");
+}
 
-  #pic-carousel__my-camera{
-    background-image: 
-        linear-gradient(var(--grad1)), 
-        linear-gradient(var(--grad2)), 
-        url("images/my-camera.jpeg");
-  }
+.pic-carousel__geisha {
+  background-image:
+    linear-gradient(var(--grad1)),
+    linear-gradient(var(--grad2)),
+    url("images/geisha.jpeg");
+}
 
-  #pic-carousel__yellow-asia{
-    background-image: 
-        linear-gradient(var(--grad1)), 
-        linear-gradient(var(--grad2)), 
-        url("images/yellow-asia.jpeg");
-  }
+.pic-carousel__my-camera {
+  background-image:
+    linear-gradient(var(--grad1)),
+    linear-gradient(var(--grad2)),
+    url("images/my-camera.jpeg");
+}
 
-  #pic-carousel__japan-street{
-    background-image: 
-        linear-gradient(var(--grad1)), 
-        linear-gradient(var(--grad2)), 
-        url("images/japan-street.jpeg");
-  }
+.pic-carousel__yellow-asia {
+  background-image:
+    linear-gradient(var(--grad1)),
+    linear-gradient(var(--grad2)),
+    url("images/yellow-asia.jpeg");
+}
+
+.pic-carousel__japan-street {
+  background-image:
+    linear-gradient(var(--grad1)),
+    linear-gradient(var(--grad2)),
+    url("images/japan-street.jpeg");
+}
