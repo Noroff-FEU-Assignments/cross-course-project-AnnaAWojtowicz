@@ -3,9 +3,10 @@
 
 <head>
   <meta charset="UTF-8" />
+  <meta name="description" content="My films">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SquareEyes</title>
+  <title>My films</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet" />
@@ -14,50 +15,114 @@
   <!--Acumin fra AdobeFonts-->
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
   <!--google icons-->
   <script src="https://kit.fontawesome.com/c1f5e20bb4.js" crossorigin="anonymous"></script> <!-- from font awsome-->
   <link href="../hamburger.css" rel="stylesheet" />
   <link href="../carousel.css" rel="stylesheet" />
   <link href="../stylesheet.css" rel="stylesheet" />
+  <link href="my-films.css" rel="stylesheet" />
 </head>
 
 <body>
   <header class="main-header">
-    <a href="../index.html">
-      <img src="../images/SquareEyes_Logo.png" alt="Logo of Square Eyes" class="main-header__logo" />
-    </a>
-    <nav class="nav__panel">
-      <ul class="nav__symbols-list">
+    <div class="logo-home-search">
+      <a href="../index.html">
+        <img src="../images/SquareEyes_Logo.png" alt="Logo of Square Eyes" class="main-header__logo" />
+      </a>
+
+      <ul class="nav__symbols-list nav__symbol-toggle-off">
         <li class="material-symbols-outlined">
-          <a href="../index2.html">
-            Home</a>
+          <a href="../index.html">Home</a>
         </li>
         <li class="material-symbols-outlined">
-          <a href="#">
-            Search
-          </a>
-        </li>
-        <li class="material-symbols-outlined"><a href="../shop/shop_your-basket.html">
-            Shopping_Basket </a>
-        </li>
-        <li class="material-symbols-outlined__avatar">
-          <a href="account/account.html">
-            <img src="../images/sign-in-cropped.jpg" alt="avatar__2" class="cta__avatar" /></a>
+          <a href="#">Search</a>
         </li>
       </ul>
-      <!--this will show only after logging in-->
-      <!--mobile: basket and hamburegr menu icons-->
-      <!--desktop: house, magnifying glass, basket, avatar icon-->
-    </nav>
+
+    </div>
+    <div class="basket-avatar">
+      <!-- Desktop version -->
+      <ul class="nav__symbols-list nav__symbol-toggle-off">
+        <li class="material-symbols-outlined">
+          <a href="../shop/shop_your-basket.html">Shopping_Basket</a>
+        </li>
+        <li class="material-symbols-outlined__avatar">
+          <a href="../account/account.html"">
+            <img src=" ../images/sign-in-cropped.jpg" alt="avatar__2" class="cta__avatar" /></a>
+        </li>
+      </ul>
+      <!-- Mobile version -->
+      <div class="hamburger-menu">
+        <input class="hamburger-checkbox__open" type="checkbox" name="" id="" />
+        <ul class="hamburger-menu-items">
+          <li><a href="#">what's new</a></li>
+          <li><a href="#">library</a></li>
+          <li><a href="#">my profile</a></li>
+          <li><a href="index.html">logout</a></li>
+        </ul>
+      </div>
+      <ul class="nav__symbols-list nav__symbol-toggle-on">
+        <li class="material-symbols-outlined">
+          <a href="../shop/shop_your-basket.html">Shopping_Basket</a>
+        </li>
+        <li class="material-symbols-outlined">
+          <a href="#">Menu</a>
+        </li>
+      </ul>
+    </div>
   </header>
-  <main>
+  <main class="main-style">
     <section>
-      <h1>My films</h1>
-      <section>
-        <!--carousel here-->
+      <!--carousel here-->
+      <section class="main-style__carousel">
+        <!--This section should appear after logging in-->
+        <h2>My Films</h2>
+        <section class="main-style__myfilms__carousel-pic">
+          <div class="film-window">
+            <h1 class="h1-in-the-film">Title</h1>
+            <div class="film__carousel__myfilms all-pic-carousel pic-carousel__funfair"></div>
+            <section class="icons-in-the-film">
+              <div class="material-symbols-rounded play"><a href="#">play_circle</a></div>
+              <div class="material-symbols-rounded delete"><a href="#">delete</a></div>
+            </section>
+          </div>
+
+          <div class="film-window">
+            <h1 class="h1-in-the-film">Title</h1>
+            <div class="film__carousel__myfilms all-pic-carousel pic-carousel__3"></div>
+            <section class="icons-in-the-film">
+              <div class="material-symbols-rounded play"><a href="#">play_circle</a></div>
+              <div class="material-symbols-rounded delete"><a href="#">delete</a></div>
+            </section>
+          </div>
+
+          <div class="film-window">
+            <h1 class="h1-in-the-film">Title</h1>
+            <div class="film__carousel__myfilms all-pic-carousel pic-carousel__home-alone"></div>
+            <section class="icons-in-the-film">
+              <div class="material-symbols-rounded play"><a href="#">play_circle</a></div>
+              <div class="material-symbols-rounded delete"><a href="#">delete</a></div>
+            </section>
+          </div>
+
+          <div class="film-window">
+            <h1 class="h1-in-the-film">Title</h1>
+            <div class="film__carousel__myfilms all-pic-carousel pic-carousel__taking-photos"></div>
+            <section class="icons-in-the-film">
+              <div class="material-symbols-rounded play"><a href="#">play_circle</a></div>
+              <div class="material-symbols-rounded delete"><a href="#">delete</a></div>
+            </section>
+          </div>
+        </section>
+        <!--carousel goes here-->
       </section>
     </section>
-    <div class="cta">button</div>
+    <!-- <div class="cta">button</div> -->
+    <div class="cta myfilms__one-button">
+      <a href="../index2.html">back</a>
+    </div>
   </main>
 </body>
 

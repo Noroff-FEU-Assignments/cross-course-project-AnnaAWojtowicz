@@ -1,3 +1,8 @@
+html,
+body {
+    height: 100vh;
+}
+
 .main-style {
     margin-top: 10rem;
 }
@@ -30,5 +35,46 @@
 
     /* .film-info p {
         margin-bottom: 6rem;
+    } */
+}
+
+.main-style__myfilms__carousel-pic {
+    display: flex;
+    overflow: scroll;
+    height: 18.75rem;
+}
+
+.main-style__myfilms__carousel-pic::-webkit-scrollbar {
+    display: none;
+}
+
+.film__carousel__myfilms {
+    border: solid #d9d9d9 1px;
+    border-radius: 0% 0% 24px 0%;
+    width: 25rem;
+    height: 100%;
+}
+
+.myfilms__one-button {
+    position: relative;
+    top: 2rem;
+}
+
+@media (max-width: 40rem) {
+    .main-style__myfilms__carousel-pic {
+        height: 11.25rem;
+    }
+
+    .film__carousel__myfilms {
+        width: 15rem;
+    }
+
+    .main-style__carousel {
+        margin-top: 8rem;
+    }
+
+    /* .myfilms__one-button {
+        position: absolute;
+        bottom: 2rem;
     } */
 }
