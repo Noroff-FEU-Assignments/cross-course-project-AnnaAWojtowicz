@@ -1,0 +1,86 @@
+.main-style {
+    margin-top: 5rem;
+}
+
+.main-style h1 {
+    margin-bottom: 0.5rem;
+    font-size: 3rem;
+}
+
+@media (max-width: 40rem) {
+    .main-style h1 {
+        margin-top: 0;
+    }
+}
+
+.account__flex-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+@media (max-width: 40rem) {
+    .account__flex-container {
+        flex-direction: column;
+        height: 100vh;
+    }
+
+    .main-style {
+        margin-top: 4rem;
+    }
+}
+
+
+.account__hello-pic {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.account__email-password-change {
+    display: flex;
+    flex-direction: column;
+    padding-top: 5.2rem;
+    padding-left: 0.5rem;
+    width: 37%;
+    justify-content: space-between;
+
+}
+
+@media (max-width: 40rem) {
+    .account__email-password-change {
+        padding-top: 0;
+        width: 100%;
+    }
+}
+
+.account__change-cta {
+    align-self: flex-end;
+    margin-top: 1rem;
+}
+
+.account__go-back-cta {
+    align-self: center;
+}
+
+
+.account__pic-and-avatar-pic {
+    position: relative;
+}
+
+.account__pic {
+    width: 100%;
+    height: auto;
+    border-radius: 0 0 24px 0;
+    border: solid #ffffff 1px;
+}
+
+.cta__avatar-account {
+    position: absolute;
+    background-size: 100%;
+    width: 30%;
+    height: auto;
+    border: solid #ffffff 3px;
+    border-radius: 50%;
+    left: 35px;
+    bottom: -10px;
+}

@@ -720,7 +720,7 @@ input::-webkit-inner-spin-button {
 
 
 
-
+/* my films */
 
 
 .main-style__pic-my-films {
@@ -825,32 +825,4 @@ input::-webkit-inner-spin-button {
 
 .material-symbols-rounded:hover {
   text-shadow: .25px 0px .1px, -.25px 0px .1px;
-}
-
-/* account */
-
-.account__pic-and-avatar-pic {
-  position: relative;
-}
-
-
-.account__pic {
-
-  width: 732px;
-  height: 484px;
-  border-radius: 0 0 24px 0;
-  border: solid #ffffff 1px;
-}
-
-
-
-.cta__avatar-account {
-  position: absolute;
-  background-size: 100%;
-  width: 200px;
-  height: 200px;
-  border: solid #ffffff 3px;
-  border-radius: 50%;
-  top: 300px;
-  left: 35px;
 }

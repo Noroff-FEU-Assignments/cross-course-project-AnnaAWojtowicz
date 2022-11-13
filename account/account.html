@@ -18,6 +18,7 @@
 <link href="../hamburger.css" rel="stylesheet" />
 <link href="../carousel.css" rel="stylesheet" />
 <link href="../stylesheet.css" rel="stylesheet" />
+<link href="./account.css" rel="stylesheet" />
 
 <body>
   <header class="main-header">
@@ -68,21 +69,30 @@
     </div>
   </header>
   <main class="main-style">
-    <section>
-      <h1>Hello Name</h1>
-      <div class="account__pic-and-avatar-pic">
-        <img src="../images/with-friends.jpeg" alt="picture from a film" class="account__pic" />
-        <img src="../images/sign-in-cropped.jpg" alt="picture of you" class="cta__avatar-account" />
+    <section class="account__flex-container">
+      <div class="account__hello-pic">
+        <h1>Hello Name</h1>
+        <div class="account__pic-and-avatar-pic">
+          <img src="../images/with-friends.jpeg" alt="picture from a film" class="account__pic" />
+          <img src="../images/sign-in-cropped.jpg" alt="picture of you" class="cta__avatar-account" />
+        </div>
       </div>
-      <h2>Your email</h2>
-      <h3>Password</h3>
-      <h3>*************</h3>
-      <div class="cta">
-        <a href="#">change now</a>
+      <div class="account__email-password-change">
+
+        <h2>Your email</h2>
+        <div>
+          <h3>Password</h3>
+          <h3>*************</h3>
+        </div>
+        <div class="cta account__change-cta">
+          <a href="#">change now</a>
+        </div>
+        <div class="cta account__go-back-cta">
+          <a href="../index2.html">go back</a>
+        </div>
       </div>
-      <div class="cta">
-        <a href="../index2.html">go back</a>
-      </div>
+
+
     </section>
   </main>
 </body>
