@@ -703,6 +703,46 @@ input::-webkit-inner-spin-button {
   margin: auto;
 }
 
+
+
+
+.pic-film-info-and-cta {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.main-style__pic-my-films {
+  border: solid #d9d9d9 1px;
+  border-radius: 0% 0% 24px 0%;
+  width: 100%;
+  height: auto;
+}
+
+.film-info-and-cta {
+  padding-left: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  justify-content: space-between;
+}
+
+.film-info-and-cta .cta {
+
+  align-self: center;
+}
+
+.film-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.country-year-min {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
 /* film window */
 
 .main-style__carousel__film {

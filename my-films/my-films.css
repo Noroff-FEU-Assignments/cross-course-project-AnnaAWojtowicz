@@ -1,0 +1,14 @@
+.main-style {
+    margin-top: 10rem;
+}
+
+.title__my-films {
+    margin-bottom: 0.5rem;
+    font-size: 3rem;
+}
+
+.my-films__container {
+    display: grid;
+    grid-template-columns: 2;
+    grid-template-rows: 2;
+}
