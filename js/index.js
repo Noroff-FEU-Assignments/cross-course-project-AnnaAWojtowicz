@@ -107,16 +107,18 @@ function createGetNowPlayingHtml(movies) {
 function createGetDramaHtml(movies) {
     for (let i = 0; i < movies.length; i++) {
         resultsContainerDrama.innerHTML += `
-    <div class="film-window">
-          <h1 class="h1-in-the-film">${movies[i].title}</h1>
-         <img src="${imageUrl}/${movies[i].backdrop_path}" class="film__carousel__general all-pic-carousel pic-carousel">
-          <section class="icons-in-the-film">
-            <div class="material-symbols-rounded info"><a href="/details.html?id=${movies[i].id}">info</a></div>
-            <div class="material-symbols-rounded shoping-basket"><a href="#">shopping_basket</a></div>
-            <div class="material-symbols-rounded favorite"><a href="#">favorite</a></div>
-          </section>
-    </div>
-    `;
+        <div class="film-window">
+            <h1 class="h1-in-the-film">${movies[i].title}</h1>
+            <div class="film__carousel__general all-pic-carousel" id="drama${i}"></div>
+            <section class="icons-in-the-film">
+                <div class="material-symbols-rounded info"><a href="/details.html?id=${movies[i].id}">info</a></div>
+                <div class="material-symbols-rounded shoping-basket"><a href="#">shopping_basket</a></div>
+                <div class="material-symbols-rounded favorite"><a href="#">favorite</a></div>
+            </section>
+        </div>`;
+        let uniqueId = document.getElementById(`drama${i}`);
+        uniqueId.style.backgroundImage =
+            `linear-gradient(var(--grad1)), linear-gradient(var(--grad2)), url(${imageUrl}/${movies[i].backdrop_path})`;
     }
 }
 
@@ -125,7 +127,7 @@ function createGetDocHtml(movies) {
         resultsContainerDoc.innerHTML += `
     <div class="film-window">
           <h1 class="h1-in-the-film">${movies[i].title}</h1>
-         <img src="${imageUrl}/${movies[i].backdrop_path}" class="film__carousel__general all-pic-carousel pic-carousel">
+          <div class="film__carousel__general all-pic-carousel" id="doc${i}"></div>
           <section class="icons-in-the-film">
             <div class="material-symbols-rounded info"><a href="/details.html?id=${movies[i].id}">info</a></div>
             <div class="material-symbols-rounded shoping-basket"><a href="#">shopping_basket</a></div>
@@ -133,6 +135,9 @@ function createGetDocHtml(movies) {
           </section>
     </div>
     `;
+        let uniqueId = document.getElementById(`doc${i}`);
+        uniqueId.style.backgroundImage =
+            `linear-gradient(var(--grad1)), linear-gradient(var(--grad2)), url(${imageUrl}/${movies[i].backdrop_path})`;
     }
 }
 
@@ -141,7 +146,7 @@ function createGetJapHtml(movies) {
         resultsContainerJap.innerHTML += `
     <div class="film-window">
           <h1 class="h1-in-the-film">${movies[i].title}</h1>
-         <img src="${imageUrl}/${movies[i].backdrop_path}" class="film__carousel__general all-pic-carousel pic-carousel">
+          <div class="film__carousel__general all-pic-carousel" id="jap${i}"></div>
           <section class="icons-in-the-film">
             <div class="material-symbols-rounded info"><a href="/details.html?id=${movies[i].id}">info</a></div>
             <div class="material-symbols-rounded shoping-basket"><a href="#">shopping_basket</a></div>
@@ -149,6 +154,9 @@ function createGetJapHtml(movies) {
           </section>
     </div>
     `;
+        let uniqueId = document.getElementById(`jap${i}`);
+        uniqueId.style.backgroundImage =
+            `linear-gradient(var(--grad1)), linear-gradient(var(--grad2)), url(${imageUrl}/${movies[i].backdrop_path})`;
     }
 }
 
