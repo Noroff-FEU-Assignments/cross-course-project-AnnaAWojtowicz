@@ -17,15 +17,21 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties
 }
 
 
-#pic-todays-film {
+/* #pic-todays-film {
   background-image:
     linear-gradient(var(--grad1)),
     linear-gradient(var(--grad2)),
     url("images/yellow-asia.jpeg");
+} */
+
+.pic-carousel {
+  /* background-image: */
+  linear-gradient(var(--grad1));
+  linear-gradient(var(--grad2));
 }
 
 
-.pic-carousel__funfair {
+/* .pic-carousel__funfair {
   background-image:
     linear-gradient(var(--grad1)),
     linear-gradient(var(--grad2)),
@@ -164,4 +170,4 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties
     linear-gradient(var(--grad1)),
     linear-gradient(var(--grad2)),
     url("images/japan-street.jpeg");
-}
+} */
