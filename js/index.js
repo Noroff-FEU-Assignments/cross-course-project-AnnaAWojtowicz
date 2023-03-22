@@ -66,8 +66,9 @@ async function getJap() {
 // }
 
 function createTodaysFilmHtml(movie) {
+
     resultsContainerTodaysFilm.style.backgroundImage =
-        "url('https://image.tmdb.org/t/p/w500//2Eewgp7o5AU1xCataDmiIL2nYxd.jpg'), linear-gradient(180deg, rgba(13, 13, 13, 0) 80%, #0D0D0D 100%), linear-gradient(180deg, #000000, rgba(13, 13, 13, 0) 30%)";
+        `linear-gradient(var(--grad1)), linear-gradient(var(--grad2)), url(${imageUrl}/${movie.backdrop_path})`;
     // resultsContainerTodaysFilm.innerHTML += `
     // <div class="film-window">
     //       <h1 class="todays-film__h1 todays-film__logged-in>Today's Film: ${movie.title}</h1>
@@ -85,16 +86,18 @@ function createTodaysFilmHtml(movie) {
 function createGetNowPlayingHtml(movies) {
     for (let i = 0; i < movies.length; i++) {
         resultsContainerNewMovies.innerHTML += `
-    <div class="film-window">
-          <h1 class="h1-in-the-film">${movies[i].title}</h1>
-         <img src="${imageUrl}/${movies[i].backdrop_path}" class="film__carousel__general all-pic-carousel pic-carousel">
-          <section class="icons-in-the-film">
-            <div class="material-symbols-rounded info"><a href="/details.html?id=${movies[i].id}">info</a></div>
-            <div class="material-symbols-rounded shoping-basket"><a href="#">shopping_basket</a></div>
-            <div class="material-symbols-rounded favorite"><a href="#">favorite</a></div>
-          </section>
-    </div>
-    `;
+            <div class="film-window">
+                <h1 class="h1-in-the-film">${movies[i].title}</h1>
+                <div class="film__carousel__general all-pic-carousel" id="now${i}"></div>
+                <section class="icons-in-the-film">
+                    <div class="material-symbols-rounded info"><a href="/details.html?id=${movies[i].id}">info</a></div>
+                    <div class="material-symbols-rounded shoping-basket"><a href="#">shopping_basket</a></div>
+                    <div class="material-symbols-rounded favorite"><a href="#">favorite</a></div>
+                </section>
+            </div>`;
+        let uniqueId = document.getElementById(`now${i}`);
+        uniqueId.style.backgroundImage =
+            `linear-gradient(var(--grad1)), linear-gradient(var(--grad2)), url(${imageUrl}/${movies[i].backdrop_path})`;
     }
 }
 
