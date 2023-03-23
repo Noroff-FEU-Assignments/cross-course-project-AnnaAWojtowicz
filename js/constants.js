@@ -7,6 +7,10 @@ const getDramaUrl = `${tmdbUrl}/discover/movie?api_key=${apiKey}&sort_by=popular
 const getDocUrl = `${tmdbUrl}/discover/movie?api_key=${apiKey}&sort_by=popularity.desc&page=1&with_genres=99`;
 const getJapaneseUrl = `${tmdbUrl}/discover/movie?api_key=${apiKey}&sort_by=popularity.desc&page=1&with_original_language=ja`;
 
+function getSearch(query) {
+    return `${tmdbUrl}/search/movie?api_key=${apiKey}&page=1&include_adult=false&query=${query}`;
+}
+
 function getFilmDetailsUrl(id) {
     return `${tmdbUrl}/movie/${id}?api_key=${apiKey}&language=en-US`;
 }

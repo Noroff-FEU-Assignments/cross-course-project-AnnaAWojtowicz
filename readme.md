@@ -24,6 +24,8 @@ Mdn (s.a.). Using CSS custom properties (variables). Mdn Web Docs. Retrieved fro
 
 Mdn (s.a.). ::-webkit-scrollbar. Mdn Web Docs. Retrieved from: https://developer.mozilla.org/en-US/docs/Web/CSS/::-webkit-scrollbar
 
+Tank D. (13.12.2010). How to go from one page to another page isong javascript. Stack Overflow. Retrieved from: https://stackoverflow.com/questions/4426184/how-to-go-from-one-page-to-another-page-using-javascript
+
 W3schools (s.a.) How TO - Custom Scrollbar. W3schools. Retrieved from: https://www.w3schools.com/howto/howto_css_custom_scrollbar.asp
 
 W3schools (s.a.) How TO - Hide Arrows From Input Number. W3schools. Retrieved from: https://www.w3schools.com/howto/howto_css_hide_arrow_number.asp

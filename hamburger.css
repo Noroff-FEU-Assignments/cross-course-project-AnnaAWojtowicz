@@ -7,65 +7,66 @@ source: https://codepen.io/alvarotrigo/pen/wvrzPWL
 }
 
 
-@media (max-width: 40rem) {
-    .hamburger-menu {
-        position: relative;
-        display: block;
-    }
+/* @media (max-width: 40rem) { */
+.hamburger-menu {
+    position: relative;
+    display: block;
+}
 
-    /* source: https://stackoverflow.com/questions/29617200/how-to-make-checkboxes-rounded */
-    .hamburger-checkbox__open {
-        margin: 0;
-        padding: 0;
-        position: absolute;
-        top: 0px;
-        right: 4px;
-        height: 46px;
-        width: 46px;
-        /* border: 1px solid rgb(174, 48, 48); */
-        border-radius: 50%;
-        appearance: none;
-        -webkit-appearance: none
-    }
+/* source: https://stackoverflow.com/questions/29617200/how-to-make-checkboxes-rounded */
+.hamburger-checkbox__open {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0px;
+    right: 4px;
+    height: 46px;
+    width: 46px;
+    /* border: 1px solid rgb(174, 48, 48); */
+    border-radius: 50%;
+    appearance: none;
+    -webkit-appearance: none
+}
 
 
-    /* .hamburger-checkbox:checked {
+/* .hamburger-checkbox:checked {
         background-color: grey;
     } */
 
-    .hamburger-menu-items {
-        display: none;
-        font-size: 1.2rem;
-        position: absolute;
-        background: #d9d9d9;
-        color: black;
-        list-style: none;
-        width: 10rem;
-        top: 34px;
-        right: 0;
-        padding-top: 2.5rem;
-        padding-left: 1rem;
-        padding-right: 1rem;
-        padding-bottom: 1rem;
-        text-align: right;
-        border-radius: 0 0 16px 0;
-        z-index: 1000;
-        border: 1px solid black;
-    }
-
-    .hamburger-menu-items li {
-        margin: 0.5rem 0;
-    }
-
-    .hamburger-menu-items li:hover {
-        font-weight: bolder;
-    }
-
-    .hamburger-menu input[type="checkbox"]:checked~.hamburger-menu-items {
-        display: block;
-    }
-
-    .hamburger-menu-items input[type="checkbox"]:checked~.hamburger-menu-items {
-        display: none;
-    }
+.hamburger-menu-items {
+    display: none;
+    font-size: 1.2rem;
+    position: absolute;
+    background: #d9d9d9;
+    color: black;
+    list-style: none;
+    width: 10rem;
+    top: 34px;
+    right: 0;
+    padding-top: 2.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+    text-align: right;
+    border-radius: 0 0 16px 0;
+    z-index: 1000;
+    border: 1px solid black;
 }
+
+.hamburger-menu-items li {
+    margin: 0.5rem 0;
+}
+
+.hamburger-menu-items li:hover {
+    font-weight: bolder;
+}
+
+.hamburger-menu input[type="checkbox"]:checked~.hamburger-menu-items {
+    display: block;
+}
+
+.hamburger-menu-items input[type="checkbox"]:checked~.hamburger-menu-items {
+    display: none;
+}
+
+/* } */

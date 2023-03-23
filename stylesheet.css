@@ -232,25 +232,26 @@ h3 {
 }
 
 /* Disable hamburger menu desktop */
-.nav__symbol-toggle-on {
+/* .nav__symbol-toggle-on {
+  display: none;
+} */
+
+/* @media (max-width: 40rem) { */
+.material-symbols-outlined {
+  font-size: 2rem;
+}
+
+/* Disable symbols nav mobile */
+.nav__symbol-toggle-off {
   display: none;
 }
 
-@media (max-width: 40rem) {
-  .material-symbols-outlined {
-    font-size: 2rem;
-  }
-
-  /* Disable symbols nav mobile */
-  .nav__symbol-toggle-off {
-    display: none;
-  }
-
-  /* Enable hamburger menu mobile */
-  .nav__symbol-toggle-on {
-    display: inline-block;
-  }
+/* Enable hamburger menu mobile */
+.nav__symbol-toggle-on {
+  display: inline-block;
 }
+
+/* } */
 
 
 /* hack from: https://stackoverflow.com/questions/22786357/anchor-tag-is-larger-than-element-it-holds */

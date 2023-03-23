@@ -5,7 +5,6 @@ const resultsContainerDoc = document.getElementById("doc");
 const resultsContainerJap = document.getElementById("jap");
 
 
-console.log(resultsContainerNewMovies);
 
 async function getResults(tmdbUrl) {
     try {
@@ -18,6 +17,11 @@ async function getResults(tmdbUrl) {
         alert("An error has occured! Please try again later. Bye.");
     }
 }
+
+
+
+
+
 
 async function getTodaysFilm() {
     const poplarMovies = await getResults(getPopularUrl);
