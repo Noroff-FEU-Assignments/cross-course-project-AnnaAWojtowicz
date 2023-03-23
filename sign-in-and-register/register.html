@@ -29,20 +29,32 @@
         <p>Register</p>
       </section>
 
-      <form action="#" method="post">
+      <form action="#" method="post" id="contactForm">
         <section class="avatar-and-fill-in__form">
+          <div>
+            <label for="name">Name</label>
+            <input type="text" id="name">
+            <div class="contactFormError" id="yourNameError">Please enter your name</div>
+          </div>
 
-          <label for="name">Name</label>
-          <input type="text" id="name" value="Don Corleone">
+          <div>
+            <label for="email">Email</label>
+            <input type="email" id="email">
+            <div class="contactFormError" id="emailError">The email address' form is invalid. Please enter your
+              email again.</div>
+          </div>
 
-          <label for="email">Email</label>
-          <input type="email" id="email" value="test@test.com">
+          <div>
+            <label for="password">Password (min. 10 characters)</label>
+            <input type="password" id="password">
+            <div class="contactFormError" id="passwordError">Your password has to have minimum 10 characters</div>
+          </div>
 
-          <label for="password">Password</label>
-          <input type="password" id="password" value="1234">
-
-          <label for="repeat-password">Repeat password</label>
-          <input type="password" id="repeat-password" value="1234">
+          <div>
+            <label for="repeat-password">Confirm password</label>
+            <input type="password" id="repeat-password">
+            <div class="contactFormError" id="confirmPasswordError">Please confirm your password</div>
+          </div>
 
         </section>
         <div class="shopping__two-buttons">
@@ -55,6 +67,7 @@
         </div>
       </form>
   </main>
+  <script src="../js/contact.js"></script>
 </body>
 
 </html>

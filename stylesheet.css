@@ -390,6 +390,10 @@ h3 {
 .payment__form {
   display: inline-block;
   text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 60%;
+  padding: 1rem;
 }
 
 .avatar-and-fill-in__form label,
@@ -402,10 +406,15 @@ h3 {
 .avatar-and-fill-in__form label,
 .payment__form label {
   margin-top: 0.8rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .avatar-and-fill-in__form input,
 .payment__form input {
+  width: 20rem;
+  max-width: 100%;
+  margin-top: 0.1rem;
   border: solid #0d0d0d 1px;
   border-radius: 2px;
   padding: 0.25rem;
@@ -423,6 +432,14 @@ input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
+
+.contactFormError {
+  display: none;
+  color: #b10000;
+  font-size: 0.8rem;
+  margin-top: 0.2rem;
+}
+
 
 /* source: https://www.w3schools.com/howto/howto_css_hide_arrow_number.asp */
 
