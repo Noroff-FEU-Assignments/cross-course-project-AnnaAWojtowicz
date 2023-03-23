@@ -34,14 +34,13 @@
           <div>
             <label for="name">Name</label>
             <input type="text" id="name">
-            <div class="contactFormError" id="yourNameError">Please enter your name</div>
+            <div class="contactFormError" id="nameError">Please enter your name</div>
           </div>
 
           <div>
             <label for="email">Email</label>
             <input type="email" id="email">
-            <div class="contactFormError" id="emailError">The email address' form is invalid. Please enter your
-              email again.</div>
+            <div class="contactFormError" id="emailError">The email address' form is invalid. Try again.</div>
           </div>
 
           <div>
@@ -52,7 +51,7 @@
 
           <div>
             <label for="repeat-password">Confirm password</label>
-            <input type="password" id="repeat-password">
+            <input type="password" id="confirmPassword">
             <div class="contactFormError" id="confirmPasswordError">Please confirm your password</div>
           </div>
 
@@ -61,7 +60,7 @@
           <div class="cta">
             <a href="sign-in-or-register.html">go back</a>
           </div>
-          <div class="cta">
+          <div class="cta" id="continueButton">
             <a href="../index2.html">continue</a>
           </div>
         </div>

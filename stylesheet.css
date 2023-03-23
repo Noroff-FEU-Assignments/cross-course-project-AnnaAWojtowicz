@@ -435,7 +435,7 @@ input::-webkit-inner-spin-button {
 
 .contactFormError {
   display: none;
-  color: #b10000;
+  color: #fdc6c6;
   font-size: 0.8rem;
   margin-top: 0.2rem;
 }
