@@ -94,9 +94,9 @@ function createGetNowPlayingHtml(movies) {
         }
         resultsContainerNewMovies.innerHTML += `
             <div class="film-window">
-                <h1 class="h1-in-the-film">${movies[i].title}</h1>
+                <h2 class="h1-in-the-film">${movies[i].title}</h2>
                 <div class="film__carousel__general all-pic-carousel" id="now${i}"></div>
-                <section class="icons-in-the-film">
+                <section class="icons-in-the-film icons-in-index">
                     <div class="material-symbols-rounded info"><a href="/details.html?id=${movies[i].id}">info</a></div>
                     <div class="material-symbols-rounded shoping-basket"><a href="#">shopping_basket</a></div>
                     <div class="material-symbols-rounded favorite"><a href="#">favorite</a></div>

@@ -21,6 +21,7 @@
   <script src="https://kit.fontawesome.com/c1f5e20bb4.js" crossorigin="anonymous"></script> <!-- from font awsome-->
   <link href="carousel.css" rel="stylesheet" />
   <link href="stylesheet.css" rel="stylesheet" />
+  <link href="index1.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -32,6 +33,7 @@
   <header>
     <img src="../images/SquareEyes_Logo.png" alt="Logo of Square Eyes" class="logo__landing-site" />
   </header>
+
   <main class="main-style">
     <section>
       <h1 class="todays-film__h1">Today's Film</h1>
@@ -45,9 +47,9 @@
 
     <section class="main-style__carousel">
       <h2>New</h2>
-      <section class="main-style__carousel-pic">
+      <section class="main-style__carousel-pic results" id="newMovies">
 
-        <div class="film-window">
+        <!-- <div class="film-window">
           <h1 class="h1-in-the-film">Title</h1>
           <div class="film__carousel__general all-pic-carousel pic-carousel__on-the-road"></div>
         </div>
@@ -86,7 +88,7 @@
         <div class="film-window">
           <h1 class="h1-in-the-film">Title</h1>
           <div class="film__carousel__general all-pic-carousel pic-carousel__window-night"></div>
-        </div>
+        </div> -->
 
 
       </section>
@@ -95,9 +97,9 @@
 
     <section class="main-style__carousel">
       <h2>Drama</h2>
-      <section class="main-style__carousel-pic">
+      <section class="main-style__carousel-pic results" id="drama">
 
-        <div class="film-window">
+        <!-- <div class="film-window">
           <h1 class="h1-in-the-film">Title</h1>
           <div class="film__carousel__general all-pic-carousel pic-carousel__window-depression"></div>
         </div>
@@ -106,7 +108,6 @@
           <h1 class="h1-in-the-film">Title</h1>
           <div class="film__carousel__general all-pic-carousel pic-carousel__ny-metro"></div>
         </div>
-
 
         <div class="film-window">
           <h1 class="h1-in-the-film">Title</h1>
@@ -136,7 +137,7 @@
         <div class="film-window">
           <h1 class="h1-in-the-film">Title</h1>
           <div class="film__carousel__general all-pic-carousel pic-carousel__young-mum"></div>
-        </div>
+        </div> -->
 
       </section>
       <!--carousel goes here-->
@@ -144,9 +145,9 @@
 
     <section class="main-style__carousel">
       <h2>Documentary</h2>
-      <section class="main-style__carousel-pic">
+      <section class="main-style__carousel-pic results" id="doc">
 
-        <div class="film-window">
+        <!-- <div class="film-window">
           <h1 class="h1-in-the-film">Title</h1>
           <div class="film__carousel__general all-pic-carousel pic-carousel__with-friends"></div>
         </div>
@@ -184,16 +185,16 @@
         <div class="film-window">
           <h1 class="h1-in-the-film">Title</h1>
           <div class="film__carousel__general all-pic-carousel pic-carousel__funfair"></div>
-        </div>
+        </div> -->
       </section>
       <!--carousel goes here-->
     </section>
 
     <section class="main-style__carousel">
       <h2>Great Collections:<br />Japan</h2>
-      <section class="main-style__carousel-pic">
+      <section class="main-style__carousel-pic results" id="jap">
 
-        <div class="film-window">
+        <!-- <div class="film-window">
           <h1 class="h1-in-the-film">Title</h1>
           <div class="film__carousel__general all-pic-carousel pic-carousel__japan-street"></div>
         </div>
@@ -231,12 +232,13 @@
         <div class="film-window">
           <h1 class="h1-in-the-film">Title</h1>
           <div class="film__carousel__general all-pic-carousel pic-carousel__by-the-sea"></div>
-        </div>
+        </div> -->
 
       </section>
       <!--carousel goes here-->
     </section>
   </main>
+
   <footer>
     <ul class="footer__main-style">
       <li class="footer__section-style-icons">
@@ -289,6 +291,9 @@
       </li>
     </ul>
   </footer>
+
+  <script src="js/constants.js"></script>
+  <script src="js/index.js"></script>
 </body>
 
 </html>
