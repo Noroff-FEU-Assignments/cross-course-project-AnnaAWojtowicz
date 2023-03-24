@@ -1,5 +1,16 @@
+/* 
+hente ref til input-search-felt gjennom id 
+hente ref til knappen i html gjennom id - legge til addlistener 
+flytte fra input til query
+kjøre funksjon (aktivert av knappen) til å søke reultater
+- jeg må sende query til den funksjonen fra input-search-felt
+sette js resultater av search i html
+*/
 const resultsSearch = document.getElementById("search");
+const button = document.getElementById("searchButton");
 
+
+const resultSearchContainer = document.getElementById("searchResults");
 
 
 async function getResults(query) {
@@ -14,22 +25,45 @@ async function getResults(query) {
     }
 }
 
+function createSearchResultHtml(movies) {
+    resultSearchContainer.innerHTML = "";
+    for (let i = 0; i < movies.length; i++) {
+        if (movies[i].backdrop_path === null) {
+            continue;
+        }
+        resultSearchContainer.innerHTML += `
+    <div class="film-window">
+          <h1 class="h1-in-the-film">${movies[i].title}</h1>
+          <div class="film__carousel__general all-pic-carousel" id="searchId${i}"></div>
+          <section class="icons-in-the-film">
+            <div class="material-symbols-rounded info"><a href="/details.html?id=${movies[i].id}">info</a></div>
+            <div class="material-symbols-rounded shoping-basket"><a href="#">shopping_basket</a></div>
+            <div class="material-symbols-rounded favorite"><a href="#">favorite</a></div>
+          </section>
+    </div>
+    `;
+        let uniqueId = document.getElementById(`searchId${i}`);
+
+        uniqueId.style.backgroundImage =
+            `linear-gradient(var(--grad1)), linear-gradient(var(--grad2)), url(${imageUrl}/${movies[i].backdrop_path})`;
+    }
+}
+
+
+
+
 async function run() {
-    const moviesSearch = await getResults("bear");
+    const moviesSearch = await getResults(resultsSearch.value);
     console.log(moviesSearch);
+    createSearchResultHtml(moviesSearch);
+
 }
 
-run();
-
-addEventListener()
 
 
+button.addEventListener("click", run);
 
 
 
-async function getSearchResults() {
-    const searchResults = await getResults(getSearch);
-    return searchResults;
-}
 
 

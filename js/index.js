@@ -89,6 +89,9 @@ function createTodaysFilmHtml(movie) {
 
 function createGetNowPlayingHtml(movies) {
     for (let i = 0; i < movies.length; i++) {
+        if (movies[i].backdrop_path === null) {
+            continue;
+        }
         resultsContainerNewMovies.innerHTML += `
             <div class="film-window">
                 <h1 class="h1-in-the-film">${movies[i].title}</h1>
@@ -110,6 +113,9 @@ function createGetNowPlayingHtml(movies) {
 
 function createGetDramaHtml(movies) {
     for (let i = 0; i < movies.length; i++) {
+        if (movies[i].backdrop_path === null) {
+            continue;
+        }
         resultsContainerDrama.innerHTML += `
         <div class="film-window">
             <h1 class="h1-in-the-film">${movies[i].title}</h1>
@@ -128,6 +134,9 @@ function createGetDramaHtml(movies) {
 
 function createGetDocHtml(movies) {
     for (let i = 0; i < movies.length; i++) {
+        if (movies[i].backdrop_path === null) {
+            continue;
+        }
         resultsContainerDoc.innerHTML += `
     <div class="film-window">
           <h1 class="h1-in-the-film">${movies[i].title}</h1>
@@ -147,6 +156,9 @@ function createGetDocHtml(movies) {
 
 function createGetJapHtml(movies) {
     for (let i = 0; i < movies.length; i++) {
+        if (movies[i].backdrop_path === null) {
+            continue;
+        }
         resultsContainerJap.innerHTML += `
     <div class="film-window">
           <h1 class="h1-in-the-film">${movies[i].title}</h1>
