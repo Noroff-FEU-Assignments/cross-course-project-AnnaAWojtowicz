@@ -49,25 +49,7 @@ async function getJap() {
     return japanese;
 }
 
-// async function test2() {
-//     const test = await getJapanese();
-//     console.log(test);
-// }
 
-// test2();
-
-// function createGetPopularHtml(movies) {
-//     for (let i = 0; i < movies.length; i++) {
-//         resultsContainer.innerHTML += `
-//     <section class="container">
-//     <a href="/details.html?id=${movies[i].id}" class="title"><div class="titles" id="title">${movies[i].title}</div>
-//     <img src="${imageUrl}/${movies[i].backdrop_path}" class="img">
-//     <div class="release__date">Release date: ${movies[i].release_date.substring(0, 4)}</div>
-//     <div class="score">Score: ${movies[i].vote_average}</div></a>
-//     </section>
-//     `;
-//     }
-// }
 
 function createTodaysFilmHtml(movie) {
 
@@ -120,7 +102,7 @@ function createGetDramaHtml(movies) {
         <div class="film-window">
             <h1 class="h1-in-the-film">${movies[i].title}</h1>
             <div class="film__carousel__general all-pic-carousel" id="drama${i}"></div>
-            <section class="icons-in-the-film">
+            <section class="icons-in-the-film icons-in-index">
                 <div class="material-symbols-rounded info"><a href="/details.html?id=${movies[i].id}">info</a></div>
                 <div class="material-symbols-rounded shoping-basket"><a href="#">shopping_basket</a></div>
                 <div class="material-symbols-rounded favorite"><a href="#">favorite</a></div>
@@ -141,7 +123,7 @@ function createGetDocHtml(movies) {
     <div class="film-window">
           <h1 class="h1-in-the-film">${movies[i].title}</h1>
           <div class="film__carousel__general all-pic-carousel" id="doc${i}"></div>
-          <section class="icons-in-the-film">
+          <section class="icons-in-the-film icons-in-index">
             <div class="material-symbols-rounded info"><a href="/details.html?id=${movies[i].id}">info</a></div>
             <div class="material-symbols-rounded shoping-basket"><a href="#">shopping_basket</a></div>
             <div class="material-symbols-rounded favorite"><a href="#">favorite</a></div>
@@ -163,7 +145,7 @@ function createGetJapHtml(movies) {
     <div class="film-window">
           <h1 class="h1-in-the-film">${movies[i].title}</h1>
           <div class="film__carousel__general all-pic-carousel" id="jap${i}"></div>
-          <section class="icons-in-the-film">
+          <section class="icons-in-the-film icons-in-index">
             <div class="material-symbols-rounded info"><a href="/details.html?id=${movies[i].id}">info</a></div>
             <div class="material-symbols-rounded shoping-basket"><a href="#">shopping_basket</a></div>
             <div class="material-symbols-rounded favorite"><a href="#">favorite</a></div>
