@@ -779,6 +779,15 @@ input::-webkit-inner-spin-button {
   justify-content: space-between;
 }
 
+.h1-in-the-film__my_films {
+  position: absolute;
+  font-size: 2.5rem;
+  margin: 0;
+  top: 10px;
+  left: 15px;
+  right: 15px;
+}
+
 @media (max-width: 40rem) {
   .film-info-and-cta {
     padding: 0;

@@ -16,7 +16,7 @@ const continueButton = document.getElementById("continueButton");
 
 function validateCardForm(event) {
     event.preventDefault();
-    debugger;
+
     let isNameOk = false;
     let isCardNumberOk = false;
     let isValidationDateOk = false;

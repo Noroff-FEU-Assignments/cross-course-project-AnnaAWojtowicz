@@ -3,6 +3,40 @@ body {
     height: 100vh;
 }
 
+:root {
+    --grad1: 180deg, rgba(13, 13, 13, 0) 80%, #0D0D0D 100%;
+    --grad2: 180deg, #000000, rgba(13, 13, 13, 0) 30%;
+}
+
+
+.pic-carousel__yellow-asia {
+    background-image:
+        linear-gradient(var(--grad1)),
+        linear-gradient(var(--grad2)),
+        url("../images/yellow-asia.jpeg");
+}
+
+.pic-carousel__3 {
+    background-image:
+        linear-gradient(var(--grad1)),
+        linear-gradient(var(--grad2)),
+        url("../images/3.jpeg");
+}
+
+.pic-carousel__home-alone {
+    background-image:
+        linear-gradient(var(--grad1)),
+        linear-gradient(var(--grad2)),
+        url("../images/home-alone.jpeg");
+}
+
+.pic-carousel__taking-photos {
+    background-image:
+        linear-gradient(var(--grad1)),
+        linear-gradient(var(--grad2)),
+        url("../images/taking-photos.jpeg");
+}
+
 .main-style {
     margin-top: 10rem;
 }
