@@ -10,6 +10,7 @@ Academind by Maximilian Schwarzmüller, Schwarzmüller M., Lorenz M. (11.2022). 
 
 Noroff (s.a.). HTML and CSS. Noroff LMS. Retrieved 13.11.2022 from: https://noroff-content.gitlab.io/feu/html-css/module-1.html
 
+Noroff (s.a.). Java Script 1. Noroff LMS. Retrieved 26.03.2023 from: https://content.noroff.dev/javascript-1/module-1.html
 
 ## websites:
 Alvaro (s.a.). Navbar. Codepen. Retrieved from: https://codepen.io/alvarotrigo/pen/wvrzPWL
