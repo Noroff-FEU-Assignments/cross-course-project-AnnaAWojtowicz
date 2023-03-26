@@ -21,6 +21,7 @@
   <link href="../carousel.css" rel="stylesheet" />
   <link href="../stylesheet.css" rel="stylesheet" />
   <link href="../background.css" rel="stylesheet" />
+  <link href="shop.css" rel="stylesheet" />
   <script>
     (function (h, o, t, j, a, r) {
       h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
@@ -93,20 +94,25 @@
     <h1 class="h1-shopping">Payment</h1>
 
     <section class="payment">
-      <form action="#" method="post">
+      <form action="#" method="post" id="contactForm">
         <section class="payment__form">
 
           <label for="name-on-the-card">Name on the card</label>
-          <input type="text" id="name-on-the-card">
+          <input name="yourName" id="yourName" />
+          <div class="contactFormError" id="yourNameError">Please enter your name</div>
 
           <label for="card-numer">Card number</label>
-          <input type="number" id="card-number">
+          <input type="number" id="cardNumber">
+          <div class="contactFormError" id="cardNumberError">Your card number is invalid. Try again.</div>
 
-          <label for="validation-date">Valid until (MM/YY)</label>
-          <input type="text" id="month-year">
+          <label for="validation-date">Valid until (MM/YYYY)</label>
+          <input type="text" id="validationDate">
+          <div class="contactFormError" id="validationDateError">The validation date is invalid. Try again.</div>
+
 
           <label for="cvv">CVV</label>
           <input type="number" id="cvv">
+          <div class="contactFormError" id="cvvError">The CVV is invalid. Try again.</div>
         </section>
 
         <div>
@@ -118,14 +124,14 @@
       <div class="cta">
         <a href="shop_your-basket.html">go back</a>
       </div>
-      <div class="cta">
-        <a href="shop_summary.html">continue</a>
+      <div class="cta" id="continueButton">
+        <a href="shop_summary.html">pay and continue</a>
       </div>
     </div>
     </form>
 
   </main>
-
+  <script src="../js/payment.js"></script>
 </body>
 
 </html>

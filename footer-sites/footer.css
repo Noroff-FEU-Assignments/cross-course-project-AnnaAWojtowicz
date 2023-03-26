@@ -19,3 +19,16 @@
 .footer__flex__child .cta {
     align-self: flex-end;
 }
+
+.footer__flex__child__contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contactFormError {
+    display: none;
+    color: #fdc6c6;
+    font-size: 0.8rem;
+    margin-top: 0.2rem;
+}
