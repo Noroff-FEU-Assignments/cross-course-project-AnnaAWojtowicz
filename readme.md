@@ -13,6 +13,8 @@ Noroff (s.a.). HTML and CSS. Noroff LMS. Retrieved 13.11.2022 from: https://noro
 Noroff (s.a.). Java Script 1. Noroff LMS. Retrieved 26.03.2023 from: https://content.noroff.dev/javascript-1/module-1.html
 
 ## websites:
+Allan, J. (12.09.2016), Regex expiration date MM/YYYY. Stack Overflow. Retrieved 25.03.2023 from: https://stackoverflow.com/questions/39459673/regex-expiration-date-mm-yyyy
+
 Alvaro (s.a.). Navbar. Codepen. Retrieved from: https://codepen.io/alvarotrigo/pen/wvrzPWL
 
 Diener, B., Noroff FEU, Philip, MJ., (2022, 14.03.). NoroffFEU first-year-cross-course-assignment-brief-two. Github.com. Retrieved 31.08.2022 from: https://github.com/NoroffFEU/first-year-cross-course-assignment-brief-two
@@ -25,7 +27,7 @@ Mdn (s.a.). Using CSS custom properties (variables). Mdn Web Docs. Retrieved fro
 
 Mdn (s.a.). ::-webkit-scrollbar. Mdn Web Docs. Retrieved from: https://developer.mozilla.org/en-US/docs/Web/CSS/::-webkit-scrollbar
 
-Tank D. (13.12.2010). How to go from one page to another page isong javascript. Stack Overflow. Retrieved from: https://stackoverflow.com/questions/4426184/how-to-go-from-one-page-to-another-page-using-javascript
+Tank D. (13.12.2010). How to go from one page to another page isong javascript. Stack Overflow. Retrieved 23.03.2023 from: https://stackoverflow.com/questions/4426184/how-to-go-from-one-page-to-another-page-using-javascript
 
 W3schools (s.a.) How TO - Custom Scrollbar. W3schools. Retrieved from: https://www.w3schools.com/howto/howto_css_custom_scrollbar.asp
 
