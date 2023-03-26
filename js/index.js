@@ -3,7 +3,7 @@ const resultsContainerNewMovies = document.getElementById("newMovies");
 const resultsContainerDrama = document.getElementById("drama");
 const resultsContainerDoc = document.getElementById("doc");
 const resultsContainerJap = document.getElementById("jap");
-
+let favoriteButtons = [];
 
 
 async function getResults(tmdbUrl) {
@@ -80,8 +80,12 @@ function createGetNowPlayingHtml(movies) {
                 <div class="film__carousel__general all-pic-carousel" id="now${i}"></div>
                 <section class="icons-in-the-film icons-in-index">
                     <div class="material-symbols-rounded info"><a href="/details.html?id=${movies[i].id}">info</a></div>
-                    <div class="material-symbols-rounded shoping-basket"><a href="#">shopping_basket</a></div>
-                    <div class="material-symbols-rounded favorite"><a href="#">favorite</a></div>
+                    <div class="material-symbols-rounded shoping-basket" id="basket${movies[i].id}" onClick="basketButtonClicked(${movies[i].id})">
+                        <a href="javascript:void(0)">shopping_basket</a>
+                    </div>
+                    <div class="material-symbols-rounded favorite" id="fav${movies[i].id}" onClick="favButtonClicked(${movies[i].id})">
+                        <a href="javascript:void(0)">favorite</a>
+                    </div>
                 </section>
             </div>`;
         let uniqueId = document.getElementById(`now${i}`);
@@ -91,7 +95,9 @@ function createGetNowPlayingHtml(movies) {
 }
 
 
-
+function favButtonClicked(button){
+    console.log("fav button clicked", button);
+}
 
 function createGetDramaHtml(movies) {
     for (let i = 0; i < movies.length; i++) {
@@ -104,8 +110,12 @@ function createGetDramaHtml(movies) {
             <div class="film__carousel__general all-pic-carousel" id="drama${i}"></div>
             <section class="icons-in-the-film icons-in-index">
                 <div class="material-symbols-rounded info"><a href="/details.html?id=${movies[i].id}">info</a></div>
-                <div class="material-symbols-rounded shoping-basket"><a href="#">shopping_basket</a></div>
-                <div class="material-symbols-rounded favorite"><a href="#">favorite</a></div>
+                <div class="material-symbols-rounded shoping-basket" id="basket${movies[i].id}" onClick="basketButtonClicked(${movies[i].id})">
+                    <a href="javascript:void(0)">shopping_basket</a>
+                </div>
+                <div class="material-symbols-rounded favorite" id="fav${movies[i].id}" onClick="favButtonClicked(${movies[i].id})">
+                    <a href="javascript:void(0)">favorite</a>
+                </div>
             </section>
         </div>`;
         let uniqueId = document.getElementById(`drama${i}`);
@@ -125,8 +135,12 @@ function createGetDocHtml(movies) {
           <div class="film__carousel__general all-pic-carousel" id="doc${i}"></div>
           <section class="icons-in-the-film icons-in-index">
             <div class="material-symbols-rounded info"><a href="/details.html?id=${movies[i].id}">info</a></div>
-            <div class="material-symbols-rounded shoping-basket"><a href="#">shopping_basket</a></div>
-            <div class="material-symbols-rounded favorite"><a href="#">favorite</a></div>
+            <div class="material-symbols-rounded shoping-basket" id="basket${movies[i].id}" onClick="basketButtonClicked(${movies[i].id})">
+                <a href="javascript:void(0)">shopping_basket</a>
+            </div>
+            <div class="material-symbols-rounded favorite" id="fav${movies[i].id}" onClick="favButtonClicked(${movies[i].id})">
+                <a href="javascript:void(0)">favorite</a>
+            </div>
           </section>
     </div>
     `;
@@ -147,8 +161,12 @@ function createGetJapHtml(movies) {
           <div class="film__carousel__general all-pic-carousel" id="jap${i}"></div>
           <section class="icons-in-the-film icons-in-index">
             <div class="material-symbols-rounded info"><a href="/details.html?id=${movies[i].id}">info</a></div>
-            <div class="material-symbols-rounded shoping-basket"><a href="#">shopping_basket</a></div>
-            <div class="material-symbols-rounded favorite"><a href="#">favorite</a></div>
+            <div class="material-symbols-rounded shoping-basket" id="basket${movies[i].id}" onClick="basketButtonClicked(${movies[i].id})">
+                <a href="javascript:void(0)">shopping_basket</a>
+            </div>
+            <div class="material-symbols-rounded favorite" id="fav${movies[i].id}" onClick="favButtonClicked(${movies[i].id})">
+                <a href="javascript:void(0)">favorite</a>
+            </div>
           </section>
     </div>
     `;
@@ -158,6 +176,36 @@ function createGetJapHtml(movies) {
     }
 }
 
+/*
+Kilder
+https://www.w3schools.com/jsref/event_onclick.asp
+https://stackoverflow.com/questions/9643311/pass-a-string-parameter-in-an-onclick-function
+*/
+function favButtonClicked(buttonId){
+    const button = document.getElementById(`fav${buttonId}`);
+    if(button.style.color === "white"){
+        //Sett original farve
+        button.style.color = "black";
+        button.style.background = "white";
+    } else {
+        //Favoritt valg
+        button.style.color = "white";
+        button.style.background = favoriteActiveColor;
+    }
+}
+
+function basketButtonClicked(buttonId){
+    const button = document.getElementById(`basket${buttonId}`);
+    if(button.style.color === "white"){
+        //Sett original farve
+        button.style.color = "black";
+        button.style.background = "white";
+    } else {
+        //Favoritt valg
+        button.style.color = "white";
+        button.style.background = addedToBasketColor;
+    }
+}
 
 async function run() {
     const moviesTodaysFilm = await getTodaysFilm();

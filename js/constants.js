@@ -20,3 +20,6 @@ function getFilmCreditsUrl(id) {
 }
 
 const imageUrl = "https://image.tmdb.org/t/p/w500";
+
+const favoriteActiveColor = "#6B0000";
+const addedToBasketColor = "#006B1E";
