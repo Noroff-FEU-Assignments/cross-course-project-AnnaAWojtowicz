@@ -12,8 +12,8 @@ The API to The Movie Data Base (DMTB) was used to get necessary film data to the
 
 Since *SquareEyes* is a schhol project that was handed in whinin a certain deadline, there is still many things that should be improved in the future. Here are some of the function that will be implemented in the near future:
 - replacing the most of HTML-code with JavaScript so that the website can be responsive;
-- extenting the use of API and JavaScript to get necessary information (e.g. flitring or searching after cathegories);
-- creatign a responsive user profile so that the client can create and reset a password, administer their account and puchase the films.
+- extending the use of API and JavaScript to get necessary information (e.g. flitring or searching after cathegories);
+- creating a responsive user profile so that the client can create and reset a password, administer their account and puchase the films.
 
 ## Built With
 - HTML;
