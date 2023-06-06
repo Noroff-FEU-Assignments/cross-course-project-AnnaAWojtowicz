@@ -1,94 +1,26 @@
-### Square Eyes website: 
-https://glittering-yeot-5f2748.netlify.app/
+# SquareEyes
+*SquareEyes* is a project that can be used as a streaming service website. 
 
-# sources:
+![screenshot of the landing site](https://raw.githubusercontent.com/AnnaAWojtowicz/SquareEyes/master/images/screenshot.png?token=GHSAT0AAAAAACAKXWOJYP4MCIFZSWYLWOG4ZD7FYZA "screenshot of the landing site")
 
+## Project Description
+*SquareEyes* enable the users to search, browse and chose a film they are interested in. They have a possibility to create or sign in to their account and purchase films they want to watch. 
+The project has been mainly created with the help of HTML, CSS and JavaScript. The API to The Movie Data Base (DMTB) was used to get necessary film data to the project. 
+Since *SquareEyes* is a schhol project that was handed in whinin a certain deadline, there is still many things that should be improved in the future. Here are some of the function that will be implemented in the near future:
+- replacing the most of HTML-code with JavaScript so that the website can be responsive;
+- extenting the use of API and JavaScript to get necessary information (e.g. flitring or searching after cathegories);
+- creatign a responsive user profile so that the client can create and reset a password, administer their account and puchase the films.
 
+## Built With
+- HTML;
+- CSS;
+- JavaScript.
 
-## courses: 
-Academind by Maximilian Schwarzmüller, Schwarzmüller M., Lorenz M. (11.2022). CSS - The Complete Guide 2023 (incl. Flexbox, Grid & Sass) [video]. https://www.udemy.com/course/css-the-complete-guide-incl-flexbox-grid-sass/.
+## How to Install and Run the project
+Clone and open repository: https://github.com/AnnaAWojtowicz/SquareEyes;
+Remeber that you will need your own API-key to be able to access DMTB database and run the project.
 
-Noroff (s.a.). HTML and CSS. Noroff LMS. Retrieved 13.11.2022 from: https://noroff-content.gitlab.io/feu/html-css/module-1.html
+## Contributing
+Feel free to contribute to this project, however, remeber to write your name in the Credits section below.
 
-Noroff (s.a.). Java Script 1. Noroff LMS. Retrieved 26.03.2023 from: https://content.noroff.dev/javascript-1/module-1.html
-
-## websites:
-Allan, J. (12.09.2016), Regex expiration date MM/YYYY. Stack Overflow. Retrieved 25.03.2023 from: https://stackoverflow.com/questions/39459673/regex-expiration-date-mm-yyyy
-
-Alvaro (s.a.). Navbar. Codepen. Retrieved from: https://codepen.io/alvarotrigo/pen/wvrzPWL
-
-Diener, B., Noroff FEU, Philip, MJ., (2022, 14.03.). NoroffFEU first-year-cross-course-assignment-brief-two. Github.com. Retrieved 31.08.2022 from: https://github.com/NoroffFEU/first-year-cross-course-assignment-brief-two
-
-Fanky (03.01.2019) Anchor tag is larger than element it holds. Stack Overflow. Retrieved from: https://stackoverflow.com/questions/22786357/anchor-tag-is-larger-than-element-it-holds
-
-Infinito84 (30.01.2017) How to make checkboxes rounded?. Stack Overflow. Retrieved from: https://stackoverflow.com/questions/29617200/how-to-make-checkboxes-rounded
-
-Mdn (s.a.). Using CSS custom properties (variables). Mdn Web Docs. Retrieved from: https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties
-
-Mdn (s.a.). ::-webkit-scrollbar. Mdn Web Docs. Retrieved from: https://developer.mozilla.org/en-US/docs/Web/CSS/::-webkit-scrollbar
-
-Tank D. (13.12.2010). How to go from one page to another page isong javascript. Stack Overflow. Retrieved 23.03.2023 from: https://stackoverflow.com/questions/4426184/how-to-go-from-one-page-to-another-page-using-javascript
-
-W3schools (s.a.) How TO - Custom Scrollbar. W3schools. Retrieved from: https://www.w3schools.com/howto/howto_css_custom_scrollbar.asp
-
-W3schools (s.a.) How TO - Hide Arrows From Input Number. W3schools. Retrieved from: https://www.w3schools.com/howto/howto_css_hide_arrow_number.asp
-
-W3schools (s.a.) CSS Variables - The var() Function. W3schools. Retrieved from: https://www.w3schools.com/css/css3_variables.asp
-
-
-## fonts and symbols:
-Font Awsome (s.a.). Icons. Retrieved from: https://fontawesome.com/icons
-
-Google (s.a.). Material symbols. Retrieved from: https://fonts.google.com/icons
-
-Slimbach, R. (s.a.) Acumin. Adobe Fonts. Retrieved from: https://fonts.adobe.com/fonts/acumin#fonts-section
-
-Ulanovsky, J., Matas, S., del Peral, J.P., Le Bailly, J. (s.a.). Montserrat. Google Fonts. Retrieved from: https://fonts.google.com/specimen/Montserrat?query=Julieta+Ulanovsky
-
-
-## logo and pictures:
-Noroff (2022). Course Assignment. Noroff Front-end Develpement. Retrieved 25.09.2022 from: https://noroff-content.gitlab.io/feu/design-1/ca.html
-
-Adesina, D. (2019). [No title]. Retrieved 09.09.2022 from: https://unsplash.com/photos/U386y9IEuww
-
-Anderson, L. (2017). Vintage Hair. Retrieved 09.09.2022 from: https://unsplash.com/photos/ixb3sh0thWI
-
-Armin (2019). [No title]. Retrieved 09.09.2022 from: https://unsplash.com/photos/h3RoWx7Vd20
-
-Banks, C. (2016). Getting myself lost in Japan. Retrieved 09.09.2022 from: https://unsplash.com/photos/hwLAI5lRhdM 
-
-Dungan, E. (2019). Teenage girl in the ocean with her head partially out of the water. Retrieved 09.09.2022 from: https://unsplash.com/photos/lNUi7W4iwok 
-
-Evans, G. (2020). Subway carriage. Retrieved 09.09.2022 from: https://unsplash.com/photos/QHdAkHIgPy0 Foster, T. (2016). Sunrise hike El Hoyo Volcano. Retrieved 09.09.2022 from: https://unsplash.com/photos/lSegRSDBMLw 
-
-Hunter, J. (2019). The amazing interior of the Everyman Cinema in Liverpool. Retrieved 09.09.2022 from: https://unsplash.com/photos/3_U-Y4_0qbg 
-
-Kovacs, B. (2020). [No title]. Retrieved 09.09.2022 from: https://unsplash.com/photos/kHBb07eXKC0 
-
-Krizsak, T. (2020). [No title]. Retrieved 09.09.2022 from: https://unsplash.com/photos/0XH1uR4sHYE 
-
-Laybourne, R. (2019). [No title]. Retrieved 09.09.2022 from: https://unsplash.com/photos/RactQzsHVYw 
-
-Lekhnitsky, O. (2021). [No title]. Retrived from: https://unsplash.com/photos/Iqvo4MjAR6Q 
-
-Liu, T. (2017). Memeory of a Geisha. Retrieved 09.09.2022 from: https://unsplash.com/photos/khQY5Eu-aa0 
-
-Lucatero, E. (2017). [No title]. Retrieved 09.09.2022 from: https://unsplash.com/photos/d2MSDujJl2g 
-
-Peerapong, N. (2015). Cinematographer’s room. Retrieved 09.09.2022 from: https://unsplash.com/photos/2uwFEAGUm6E. 
-
-Perren, L. (2020). [No title]. Retrieved 09.09.2022 from: https://unsplash.com/photos/NtyXUT12hn0 
-
-Safari, H. (2018). Brave. Retrieved 09.09.2022 from: https://unsplash.com/photos/zawAr1FKOMw 
-
-Silliman, N. (2016). [No title]. Retrieved 09.09.2022 from: https://unsplash.com/photos/gzhyKEo_cbU 
-
-Simon, M. (2018). Movie Night. Retrieved 09.09.2022 from: https://unsplash.com/photos/atsUqIm3wxo 
-
-Spratt, A. (2018). Child holding vintage camera. Retrieved 09.09.2022 from: https://unsplash.com/photos/ZbZgfhosHhk
-
-Suen, Y. (2017). Vintage camera on glass table. Retrieved 09.09.2022 from: https://unsplash.com/photos/W1d1X42SovY 
-
-Yaoqi (2015). Alone at sea. Retrieved 09.09.2022 from: https://unsplash.com/photos/0B2Q1p8K2pM
-
-
+## Credits
