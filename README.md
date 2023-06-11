@@ -1,7 +1,7 @@
 # SquareEyes
 *SquareEyes* is a project that can be used as a streaming service website. 
 
-![screenshot of the landing site](https://raw.githubusercontent.com/AnnaAWojtowicz/SquareEyes/master/images/screenshot.png?token=GHSAT0AAAAAACAKXWOJ5QUW4PHDNOEK7N5GZEE2CHA "screenshot of the landing site")
+![screenshot of the landing site](https://raw.githubusercontent.com/Noroff-FEU-Assignments/cross-course-project-AnnaAWojtowicz/master/images/screenshot.png "screenshot of the landing site")
 
 ## Project Description
 *SquareEyes* enable the users to search, browse and chose a film they are interested in. They have a possibility to create or sign in to their account and purchase films they want to watch. 
